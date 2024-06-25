@@ -1,0 +1,123 @@
+
+{
+    "gst": {
+      "sliceId": "slice-001",
+      "attributes": {
+        "WhatsDrivingTheConnectivityRequirement?": {
+            "description": "Connectivity requirement in plain text",
+            "type": "string"
+        },
+        "UseCaseType": {
+            "description": "Use case, per NGMN",
+            "type": "string"
+        },
+        "Service/SliceType(Sst)": {
+            "description": "Service/Slice Type",
+            "type": "string",
+            "enum": [
+            "eMBB",
+            "uRLLC",
+            "mMTC"
+            ],
+            "minItems": "1"
+        },
+        "SliceDifferentiator": {
+            "description": "Slice differentiator",
+            "type": "string"
+        },
+        "NumberOfTerminals": {
+            "description": "Number of terminals or UEs",
+            "type": "string",
+            "maxLength": "22"
+        },
+        "availability": {
+          "value": 99.999,
+          "unit": "percent"
+        },
+        "coverageArea": {
+          "value": "urban",
+          "description": "City center and surrounding suburbs"
+        },
+        "latencyTolerance": {
+          "value": 10,
+          "unit": "ms"
+        },
+        "deterministicCommunication": {
+          "supported": true,
+          "guaranteedLatency": 5,
+          "guaranteedLatencyUnit": "ms"
+        },
+        "downlinkThroughputPerSlice": {
+          "value": 1000,
+          "unit": "Mbps"
+        },
+        "downlinkThroughputPerUE": {
+          "value": 100,
+          "unit": "Mbps"
+        },
+        "energyEfficiency": {
+          "supported": true,
+          "level": "high"
+        },
+        "groupCommunicationSupport": {
+          "supported": true,
+          "maxGroupSize": 1000
+        },
+        "isolationLevel": {
+          "value": "physical",
+          "description": "Dedicated physical resources"
+        },
+        "maxPacketSize": {
+          "value": 1500,
+          "unit": "bytes"
+        },
+        "missionCriticalSupport": {
+          "supported": true,
+          "priorityLevel": 1
+        },
+        "mmTelSupport": {
+          "supported": true
+        },
+        "nbIoTSupport": {
+          "supported": false
+        },
+        "networkFunctionsOwnership": {
+          "ownedByCustomer": ["AMF", "SMF"],
+          "ownedByProvider": ["UPF", "RAN"]
+        },
+        "maxPduSessions": {
+          "value": 100000
+        },
+        "maxNumberOfUEs": {
+          "value": 50000
+        },
+        "performanceMonitoring": {
+          "supported": true,
+          "metrics": ["latency", "throughput", "packetLoss"]
+        },
+        "performancePrediction": {
+          "supported": true,
+          "predictionWindow": {
+            "value": 30,
+            "unit": "minutes"
+          }
+        },
+        "positioningSupport": {
+          "supported": true,
+          "accuracy": {
+            "value": 10,
+            "unit": "meters"
+          }
+        },
+        "radioSpectrum": {
+          "bands": ["n78", "n258"],
+          "bandwidth": {
+            "value": 100,
+            "unit": "MHz"
+          }
+        }
+      }
+    }
+  }
+  
+  

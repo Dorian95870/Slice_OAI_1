@@ -1,0 +1,390 @@
+[2024-06-07 12:14:38.478] [udr_server] [start] Options parsed
+[2024-06-07 12:14:38.478] [system] [debug] Parsing the configuration file, file type YAML.
+[2024-06-07 12:14:38.478] [config ] [info] Reading NF configuration from /openair-udr/etc/config.yaml
+[2024-06-07 12:14:38.503] [config ] [debug] Unknown NF amf in configuration. Ignored
+[2024-06-07 12:14:38.503] [config ] [debug] Unknown NF udm in configuration. Ignored
+[2024-06-07 12:14:38.503] [config ] [debug] Unknown NF ausf in configuration. Ignored
+[2024-06-07 12:14:38.503] [config ] [debug] Unknown NF nssf in configuration. Ignored
+[2024-06-07 12:14:38.504] [config ] [debug] Validating configuration of log_level
+[2024-06-07 12:14:38.504] [config ] [debug] Validating configuration of register_nf
+[2024-06-07 12:14:38.504] [config ] [debug] Validating configuration of http_version
+[2024-06-07 12:14:38.504] [config ] [debug] Validating configuration of curl_timeout
+[2024-06-07 12:14:38.504] [config ] [debug] Validating configuration of NRF
+[2024-06-07 12:14:38.504] [config ] [debug] Validating configuration of UDR
+[2024-06-07 12:14:38.506] [config ] [debug] Validating configuration of database
+[2024-06-07 12:14:38.506] [config ] [info] ==== OPENAIRINTERFACE udr vBranch: HEAD Abrev. Hash: ab5ad7e Date: Tue Jan 23 16:00:03 2024 +0100 ====
+[2024-06-07 12:14:38.506] [config ] [info] Basic Configuration:
+[2024-06-07 12:14:38.506] [config ] [info]   - log_level..................................: debug
+[2024-06-07 12:14:38.506] [config ] [info]   - register_nf................................: Yes
+[2024-06-07 12:14:38.506] [config ] [info]   - http_version...............................: 2
+[2024-06-07 12:14:38.506] [config ] [info]   - Curl Timeout...............................: 3000 (ms)
+[2024-06-07 12:14:38.506] [config ] [info]     UDR:
+[2024-06-07 12:14:38.506] [config ] [info]     - host.....................................: oai-udr
+[2024-06-07 12:14:38.506] [config ] [info]     - sbi
+[2024-06-07 12:14:38.506] [config ] [info]       + URL....................................: http://oai-udr:8080
+[2024-06-07 12:14:38.506] [config ] [info]       + API Version............................: v1
+[2024-06-07 12:14:38.506] [config ] [info]       + IPv4 Address ..........................: 192.168.70.133
+[2024-06-07 12:14:38.506] [config ] [info]     - UDR Name.................................: oai-udr
+[2024-06-07 12:14:38.506] [config ] [info]   Database:
+[2024-06-07 12:14:38.506] [config ] [info]     - Host.....................................: mysql
+[2024-06-07 12:14:38.506] [config ] [info]     - Port.....................................: 3306
+[2024-06-07 12:14:38.506] [config ] [info]     - Database Type............................: mysql
+[2024-06-07 12:14:38.506] [config ] [info]     - User.....................................: test
+[2024-06-07 12:14:38.506] [config ] [info]     - Password.................................: test
+[2024-06-07 12:14:38.506] [config ] [info]     - Database Name............................: oai_db
+[2024-06-07 12:14:38.506] [config ] [info]     - Connection Timeout.......................: 300
+[2024-06-07 12:14:38.506] [config ] [info] Peer NF Configuration:
+[2024-06-07 12:14:38.506] [udr_app] [start] Starting...
+[2024-06-07 12:14:38.506] [udr_db] [debug] Initializing MySQL DB ...
+[2024-06-07 12:14:38.508] [udr_db] [debug] Done!
+[2024-06-07 12:14:38.508] [udr_db] [debug] Connecting to MySQL DB
+[2024-06-07 12:14:38.509] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:38.610] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:38.711] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:38.813] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:38.917] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:39.020] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:39.120] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:39.222] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:39.324] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:39.426] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:39.528] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:39.629] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:39.731] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:39.832] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:39.937] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:40.039] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:40.140] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:40.245] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:40.345] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:40.446] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:40.548] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:40.648] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:40.750] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:40.851] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:40.951] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:41.052] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:41.153] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:41.254] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:41.355] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:41.456] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:41.557] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:41.657] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:41.758] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:41.858] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:41.959] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:42.060] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:42.160] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:42.261] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:42.361] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:42.462] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:42.563] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:42.663] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:42.764] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:42.864] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:42.965] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:43.065] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:43.166] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:43.267] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:43.367] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:43.468] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:43.569] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:43.669] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:43.770] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:43.871] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:43.971] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:44.072] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:44.173] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:44.273] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:44.374] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:44.474] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:44.575] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:44.676] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:44.776] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:44.877] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:44.977] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:45.078] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:45.178] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:45.279] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:45.379] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:45.480] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:45.581] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:45.681] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:45.782] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:45.882] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:45.983] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:46.083] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:46.184] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:46.284] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:46.385] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:46.486] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:46.586] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:46.687] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:46.788] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:46.888] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:46.989] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:47.089] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:47.190] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:47.291] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:47.391] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:47.492] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:47.593] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:47.693] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:47.794] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:47.894] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:47.995] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:48.096] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:48.196] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:48.297] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:48.398] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:48.498] [udr_db] [error] An error occurred when connecting to MySQL DB (Can't connect to MySQL server on 'mysql:3306' (111)), retry ...
+[2024-06-07 12:14:48.598] [udr_app] [warning] Could not establish the connection to the DB
+[2024-06-07 12:14:48.598] [udr_app] [start] Started
+[2024-06-07 12:14:48.598] [udr_app] [info] NRF TASK Created 
+[2024-06-07 12:14:48.598] [udr_app] [debug] - NF instance info
+[2024-06-07 12:14:48.598] [udr_app] [debug]     Instance ID: f3e0cf30-2e76-4a4b-a7ee-98498b50b96a
+[2024-06-07 12:14:48.598] [udr_app] [debug]     Instance name: OAI-UDR
+[2024-06-07 12:14:48.599] [udr_app] [debug]     Instance type: UDR
+[2024-06-07 12:14:48.599] [udr_app] [debug]     Instance fqdn: 
+[2024-06-07 12:14:48.599] [udr_app] [debug]     Status: REGISTERED
+[2024-06-07 12:14:48.599] [udr_app] [debug]     HeartBeat timer: 50
+[2024-06-07 12:14:48.599] [udr_app] [debug]     Priority: 1
+[2024-06-07 12:14:48.599] [udr_app] [debug]     Capacity: 100
+[2024-06-07 12:14:48.599] [udr_app] [debug]     IPv4 Addr:
+[2024-06-07 12:14:48.599] [udr_app] [debug]         192.168.70.133
+[2024-06-07 12:14:48.599] [udr_app] [debug] 	UDR Info
+[2024-06-07 12:14:48.599] [udr_app] [debug] 		GroupId: oai-udr-testgroupid
+[2024-06-07 12:14:48.599] [udr_app] [debug] 		 SupiRanges: Start - 208950000000131, End - , Pattern - ^imsi-20895[31-131]{6}$
+[2024-06-07 12:14:48.599] [udr_app] [debug] 		 GpsiRanges: Start - 752740000, End - 752749999, Pattern - ^gpsi-75274[0-9]{4}$
+[2024-06-07 12:14:48.599] [udr_app] [debug] 		 Data Set Id: 0210
+[2024-06-07 12:14:48.599] [udr_app] [debug] 		 Data Set Id: 9876
+[2024-06-07 12:14:48.599] [udr_app] [debug] udr profile to JSON:
+ {"capacity":100,"fqdn":"","heartBeatTimer":50,"ipv4Addresses":["192.168.70.133"],"nfInstanceId":"f3e0cf30-2e76-4a4b-a7ee-98498b50b96a","nfInstanceName":"OAI-UDR","nfStatus":"REGISTERED","nfType":"UDR","priority":1,"sNssais":[],"udrInfo":{"DataSetId":["0210","9876"],"externalGroupIdentifiersRanges":[],"gpsiRanges":[{"end":"752749999","pattern":"^gpsi-75274[0-9]{4}$","start":"752740000"}],"groupId":"oai-udr-testgroupid","supiRanges":[{"end":"","pattern":"^imsi-20895[31-131]{6}$","start":"208950000000131"}]}}
+[2024-06-07 12:14:48.599] [udr_nrf] [info] Sending NF Registration request
+[2024-06-07 12:14:48.599] [udr_app] [info] Send HTTP message with body {"capacity":100,"fqdn":"","heartBeatTimer":50,"ipv4Addresses":["192.168.70.133"],"nfInstanceId":"f3e0cf30-2e76-4a4b-a7ee-98498b50b96a","nfInstanceName":"OAI-UDR","nfStatus":"REGISTERED","nfType":"UDR","priority":1,"sNssais":[],"udrInfo":{"DataSetId":["0210","9876"],"externalGroupIdentifiersRanges":[],"gpsiRanges":[{"end":"752749999","pattern":"^gpsi-75274[0-9]{4}$","start":"752740000"}],"groupId":"oai-udr-testgroupid","supiRanges":[{"end":"","pattern":"^imsi-20895[31-131]{6}$","start":"208950000000131"}]}}
+[2024-06-07 12:14:48.599] [udr_app] [info] Server URI http://oai-nrf:80/nnrf-nfm/v1/nf-instances/f3e0cf30-2e76-4a4b-a7ee-98498b50b96a
+[2024-06-07 12:14:48.599] [udr_server] [info] HTTP2 server started 
+* Could not resolve host: oai-nrf
+* Closing connection 0
+[2024-06-07 12:14:48.612] [udr_app] [debug] Curl retry 1 ...
+* Could not resolve host: oai-nrf
+* Closing connection 1
+[2024-06-07 12:14:48.622] [udr_app] [debug] Curl retry 2 ...
+* Could not resolve host: oai-nrf
+* Closing connection 2
+[2024-06-07 12:14:48.634] [udr_app] [debug] Curl retry 3 ...
+[2024-06-07 12:14:48.634] [udr_app] [debug] Still could not reach the destination after 3 retries
+[2024-06-07 12:14:53.634] [udr_app] [debug] NF Register Retry 1 ...
+[2024-06-07 12:14:53.634] [udr_app] [info] Send HTTP message with body {"capacity":100,"fqdn":"","heartBeatTimer":50,"ipv4Addresses":["192.168.70.133"],"nfInstanceId":"f3e0cf30-2e76-4a4b-a7ee-98498b50b96a","nfInstanceName":"OAI-UDR","nfStatus":"REGISTERED","nfType":"UDR","priority":1,"sNssais":[],"udrInfo":{"DataSetId":["0210","9876"],"externalGroupIdentifiersRanges":[],"gpsiRanges":[{"end":"752749999","pattern":"^gpsi-75274[0-9]{4}$","start":"752740000"}],"groupId":"oai-udr-testgroupid","supiRanges":[{"end":"","pattern":"^imsi-20895[31-131]{6}$","start":"208950000000131"}]}}
+[2024-06-07 12:14:53.634] [udr_app] [info] Server URI http://oai-nrf:80/nnrf-nfm/v1/nf-instances/f3e0cf30-2e76-4a4b-a7ee-98498b50b96a
+* Could not resolve host: oai-nrf
+* Closing connection 0
+[2024-06-07 12:14:53.653] [udr_app] [debug] Curl retry 1 ...
+* Could not resolve host: oai-nrf
+* Closing connection 1
+[2024-06-07 12:14:53.700] [udr_app] [debug] Curl retry 2 ...
+* Could not resolve host: oai-nrf
+* Closing connection 2
+[2024-06-07 12:14:53.717] [udr_app] [debug] Curl retry 3 ...
+[2024-06-07 12:14:53.717] [udr_app] [debug] Still could not reach the destination after 3 retries
+[2024-06-07 12:15:03.717] [udr_app] [debug] NF Register Retry 2 ...
+[2024-06-07 12:15:03.717] [udr_app] [info] Send HTTP message with body {"capacity":100,"fqdn":"","heartBeatTimer":50,"ipv4Addresses":["192.168.70.133"],"nfInstanceId":"f3e0cf30-2e76-4a4b-a7ee-98498b50b96a","nfInstanceName":"OAI-UDR","nfStatus":"REGISTERED","nfType":"UDR","priority":1,"sNssais":[],"udrInfo":{"DataSetId":["0210","9876"],"externalGroupIdentifiersRanges":[],"gpsiRanges":[{"end":"752749999","pattern":"^gpsi-75274[0-9]{4}$","start":"752740000"}],"groupId":"oai-udr-testgroupid","supiRanges":[{"end":"","pattern":"^imsi-20895[31-131]{6}$","start":"208950000000131"}]}}
+[2024-06-07 12:15:03.717] [udr_app] [info] Server URI http://oai-nrf:80/nnrf-nfm/v1/nf-instances/f3e0cf30-2e76-4a4b-a7ee-98498b50b96a
+* Could not resolve host: oai-nrf
+* Closing connection 0
+[2024-06-07 12:15:03.728] [udr_app] [debug] Curl retry 1 ...
+* Could not resolve host: oai-nrf
+* Closing connection 1
+[2024-06-07 12:15:03.739] [udr_app] [debug] Curl retry 2 ...
+* Could not resolve host: oai-nrf
+* Closing connection 2
+[2024-06-07 12:15:03.752] [udr_app] [debug] Curl retry 3 ...
+[2024-06-07 12:15:03.752] [udr_app] [debug] Still could not reach the destination after 3 retries
+[2024-06-07 12:15:23.752] [udr_app] [debug] NF Register Retry 3 ...
+[2024-06-07 12:15:23.752] [udr_nrf] [info] NF Registration procedure failed after 3 retries
+[2024-06-07 12:19:38.797] [udr_db] [debug] DB Connection handling, current time: Fri Jun  7 12:19:38 2024
+
+[2024-06-07 12:19:38.797] [udr_app] [warning] The connection to the DB is not active, reset the connection and try again ...
+[2024-06-07 12:19:38.797] [udr_db] [debug] Close the connection with MySQL DB
+[2024-06-07 12:19:38.797] [udr_db] [debug] Initializing MySQL DB ...
+[2024-06-07 12:19:38.797] [udr_db] [debug] Done!
+[2024-06-07 12:19:38.797] [udr_db] [debug] Connecting to MySQL DB
+[2024-06-07 12:19:38.807] [udr_db] [info] Connected to MySQL DB
+[2024-06-07 12:24:39.261] [udr_db] [debug] DB Connection handling, current time: Fri Jun  7 12:24:39 2024
+
+[2024-06-07 12:29:39.609] [udr_db] [debug] DB Connection handling, current time: Fri Jun  7 12:29:39 2024
+
+[2024-06-07 12:33:03.279] [udr_server] [info] Received response: 
+[2024-06-07 12:33:03.279] [udr_app] [info] [UE Id 208950000000035] Retrieve the Authentication Subscription data of an UE
+[2024-06-07 12:33:03.279] [udr_db] [info] [UE Id 208950000000035] Query Authentication Subscription
+[2024-06-07 12:33:03.279] [udr_db] [info] [UE Id 208950000000035] MySQL Query: SELECT * FROM AuthenticationSubscription WHERE ueid='208950000000035'
+[2024-06-07 12:33:03.280] [udr_db] [debug] [UE Id 208950000000035] Row [0]: ueid 
+[2024-06-07 12:33:03.280] [udr_db] [debug] [UE Id 208950000000035] Row [1]: authenticationMethod 
+[2024-06-07 12:33:03.280] [udr_db] [debug] [UE Id 208950000000035] Row [2]: encPermanentKey 
+[2024-06-07 12:33:03.280] [udr_db] [debug] [UE Id 208950000000035] Row [3]: protectionParameterId 
+[2024-06-07 12:33:03.280] [udr_db] [debug] [UE Id 208950000000035] Row [4]: sequenceNumber 
+[2024-06-07 12:33:03.280] [udr_db] [debug] [UE Id 208950000000035] Row [5]: authenticationManagementField 
+[2024-06-07 12:33:03.280] [udr_db] [debug] [UE Id 208950000000035] Row [6]: algorithmId 
+[2024-06-07 12:33:03.280] [udr_db] [debug] [UE Id 208950000000035] Row [7]: encOpcKey 
+[2024-06-07 12:33:03.280] [udr_db] [debug] [UE Id 208950000000035] Row [8]: encTopcKey 
+[2024-06-07 12:33:03.280] [udr_db] [debug] [UE Id 208950000000035] Row [9]: vectorGenerationInHss 
+[2024-06-07 12:33:03.280] [udr_db] [debug] [UE Id 208950000000035] Row [10]: n5gcAuthMethod 
+[2024-06-07 12:33:03.280] [udr_db] [debug] [UE Id 208950000000035] Row [11]: rgAuthenticationInd 
+[2024-06-07 12:33:03.280] [udr_db] [debug] [UE Id 208950000000035] Row [12]: supi 
+[2024-06-07 12:33:03.280] [udr_app] [info] [UE Id 208950000000035] AuthenticationSubscription: {"algorithmId":"milenage","authenticationManagementField":"8000","authenticationMethod":"5G_AKA","encOpcKey":"63bfa50ee6523365ff14c1f45f88737d","encPermanentKey":"0C0A34601D4F07677303652C0462535B","protectionParameterId":"0C0A34601D4F07677303652C0462535B","sequenceNumber":{"lastIndexes":{"ausf":0},"sqn":"000000000020","sqnScheme":"NON_TIME_BASED"},"supi":"208950000000035"}
+[2024-06-07 12:33:03.280] [udr_server] [info] HTTP Response code 200 (HTTP Version 2).
+
+[2024-06-07 12:33:03.282] [udr_app] [info] [UE Id 208950000000035] Modify the Authentication Subscription data of an UE
+[2024-06-07 12:33:03.282] [udr_db] [info] [UE Id 208950000000035] MySQL Query: SELECT * from AuthenticationSubscription WHERE ueid='208950000000035'
+[2024-06-07 12:33:03.283] [udr_db] [info] [UE Id 208950000000035] MySQL Update command UPDATE AuthenticationSubscription SET sequenceNumber='{"lastIndexes":{"ausf":0},"sqn":"000000000060","sqnScheme":"NON_TIME_BASED"}' WHERE ueid='208950000000035'
+[2024-06-07 12:33:03.293] [udr_db] [info] [UE Id 208950000000035] AuthenticationSubscription PATCH: [{"from":"","op":"replace","path":"","value":"{\"lastIndexes\":{\"ausf\":0},\"sqn\":\"000000000060\",\"sqnScheme\":\"NON_TIME_BASED\"}"}]
+[2024-06-07 12:33:03.293] [udr_app] [info] [UE Id 208950000000035] Successful modified the Authentication subscription data
+[2024-06-07 12:33:03.293] [udr_server] [debug] HTTP Response code 204 (HTTP Version 2).
+
+[2024-06-07 12:33:03.298] [udr_server] [info] Received response: 
+[2024-06-07 12:33:03.298] [udr_app] [info] [UE Id 208950000000035] Retrieve the Authentication Subscription data of an UE
+[2024-06-07 12:33:03.298] [udr_db] [info] [UE Id 208950000000035] Query Authentication Subscription
+[2024-06-07 12:33:03.298] [udr_db] [info] [UE Id 208950000000035] MySQL Query: SELECT * FROM AuthenticationSubscription WHERE ueid='208950000000035'
+[2024-06-07 12:33:03.299] [udr_db] [debug] [UE Id 208950000000035] Row [0]: ueid 
+[2024-06-07 12:33:03.299] [udr_db] [debug] [UE Id 208950000000035] Row [1]: authenticationMethod 
+[2024-06-07 12:33:03.299] [udr_db] [debug] [UE Id 208950000000035] Row [2]: encPermanentKey 
+[2024-06-07 12:33:03.299] [udr_db] [debug] [UE Id 208950000000035] Row [3]: protectionParameterId 
+[2024-06-07 12:33:03.299] [udr_db] [debug] [UE Id 208950000000035] Row [4]: sequenceNumber 
+[2024-06-07 12:33:03.299] [udr_db] [debug] [UE Id 208950000000035] Row [5]: authenticationManagementField 
+[2024-06-07 12:33:03.299] [udr_db] [debug] [UE Id 208950000000035] Row [6]: algorithmId 
+[2024-06-07 12:33:03.299] [udr_db] [debug] [UE Id 208950000000035] Row [7]: encOpcKey 
+[2024-06-07 12:33:03.299] [udr_db] [debug] [UE Id 208950000000035] Row [8]: encTopcKey 
+[2024-06-07 12:33:03.299] [udr_db] [debug] [UE Id 208950000000035] Row [9]: vectorGenerationInHss 
+[2024-06-07 12:33:03.299] [udr_db] [debug] [UE Id 208950000000035] Row [10]: n5gcAuthMethod 
+[2024-06-07 12:33:03.299] [udr_db] [debug] [UE Id 208950000000035] Row [11]: rgAuthenticationInd 
+[2024-06-07 12:33:03.299] [udr_db] [debug] [UE Id 208950000000035] Row [12]: supi 
+[2024-06-07 12:33:03.299] [udr_app] [info] [UE Id 208950000000035] AuthenticationSubscription: {"algorithmId":"milenage","authenticationManagementField":"8000","authenticationMethod":"5G_AKA","encOpcKey":"63bfa50ee6523365ff14c1f45f88737d","encPermanentKey":"0C0A34601D4F07677303652C0462535B","protectionParameterId":"0C0A34601D4F07677303652C0462535B","sequenceNumber":{"lastIndexes":{"ausf":0},"sqn":"000000000060","sqnScheme":"NON_TIME_BASED"},"supi":"208950000000035"}
+[2024-06-07 12:33:03.299] [udr_server] [info] HTTP Response code 200 (HTTP Version 2).
+
+[2024-06-07 12:33:03.300] [udr_app] [info] [UE Id 208950000000035] Store the Authentication Status data of an UE
+[2024-06-07 12:33:03.300] [udr_db] [info] [UE Id 208950000000035] MySQL query: SELECT * FROM AuthenticationStatus WHERE ueid='208950000000035'
+[2024-06-07 12:33:03.302] [udr_db] [info] [UE Id 208950000000035] MySQL query: INSERT INTO AuthenticationStatus SET ueid='208950000000035',nfInstanceId='400346f4-087e-40b1-a4cd-00566953999d',success=1,timeStamp='2024-06-07T12:33:03Z',authType='5G_AKA',servingNetworkName='5G:mnc095.mcc208.3gppnetwork.org',authRemovalInd=0
+[2024-06-07 12:33:03.305] [udr_db] [info] [UE Id 208950000000035] AuthenticationStatus PUT: {"authRemovalInd":false,"authType":"5G_AKA","nfInstanceId":"400346f4-087e-40b1-a4cd-00566953999d","servingNetworkName":"5G:mnc095.mcc208.3gppnetwork.org","success":true,"timeStamp":"2024-06-07T12:33:03Z"}
+[2024-06-07 12:33:03.305] [udr_app] [info] [UE Id 208950000000035] Successful stored the Authentication Status data
+[2024-06-07 12:33:03.305] [udr_server] [debug] HTTP Response code 204 (HTTP Version 2).
+
+[2024-06-07 12:33:29.530] [udr_server] [info] Received response: 
+[2024-06-07 12:33:29.530] [udr_app] [info] [UE Id 208950000000036] Retrieve the Authentication Subscription data of an UE
+[2024-06-07 12:33:29.530] [udr_db] [info] [UE Id 208950000000036] Query Authentication Subscription
+[2024-06-07 12:33:29.530] [udr_db] [info] [UE Id 208950000000036] MySQL Query: SELECT * FROM AuthenticationSubscription WHERE ueid='208950000000036'
+[2024-06-07 12:33:29.532] [udr_db] [debug] [UE Id 208950000000036] Row [0]: ueid 
+[2024-06-07 12:33:29.532] [udr_db] [debug] [UE Id 208950000000036] Row [1]: authenticationMethod 
+[2024-06-07 12:33:29.532] [udr_db] [debug] [UE Id 208950000000036] Row [2]: encPermanentKey 
+[2024-06-07 12:33:29.532] [udr_db] [debug] [UE Id 208950000000036] Row [3]: protectionParameterId 
+[2024-06-07 12:33:29.532] [udr_db] [debug] [UE Id 208950000000036] Row [4]: sequenceNumber 
+[2024-06-07 12:33:29.532] [udr_db] [debug] [UE Id 208950000000036] Row [5]: authenticationManagementField 
+[2024-06-07 12:33:29.532] [udr_db] [debug] [UE Id 208950000000036] Row [6]: algorithmId 
+[2024-06-07 12:33:29.532] [udr_db] [debug] [UE Id 208950000000036] Row [7]: encOpcKey 
+[2024-06-07 12:33:29.532] [udr_db] [debug] [UE Id 208950000000036] Row [8]: encTopcKey 
+[2024-06-07 12:33:29.532] [udr_db] [debug] [UE Id 208950000000036] Row [9]: vectorGenerationInHss 
+[2024-06-07 12:33:29.532] [udr_db] [debug] [UE Id 208950000000036] Row [10]: n5gcAuthMethod 
+[2024-06-07 12:33:29.532] [udr_db] [debug] [UE Id 208950000000036] Row [11]: rgAuthenticationInd 
+[2024-06-07 12:33:29.532] [udr_db] [debug] [UE Id 208950000000036] Row [12]: supi 
+[2024-06-07 12:33:29.532] [udr_app] [info] [UE Id 208950000000036] AuthenticationSubscription: {"algorithmId":"milenage","authenticationManagementField":"8000","authenticationMethod":"5G_AKA","encOpcKey":"63bfa50ee6523365ff14c1f45f88737d","encPermanentKey":"0C0A34601D4F07677303652C0462535B","protectionParameterId":"0C0A34601D4F07677303652C0462535B","sequenceNumber":{"lastIndexes":{"ausf":0},"sqn":"000000000020","sqnScheme":"NON_TIME_BASED"},"supi":"208950000000036"}
+[2024-06-07 12:33:29.532] [udr_server] [info] HTTP Response code 200 (HTTP Version 2).
+
+[2024-06-07 12:33:29.541] [udr_app] [info] [UE Id 208950000000036] Modify the Authentication Subscription data of an UE
+[2024-06-07 12:33:29.541] [udr_db] [info] [UE Id 208950000000036] MySQL Query: SELECT * from AuthenticationSubscription WHERE ueid='208950000000036'
+[2024-06-07 12:33:29.542] [udr_db] [info] [UE Id 208950000000036] MySQL Update command UPDATE AuthenticationSubscription SET sequenceNumber='{"lastIndexes":{"ausf":0},"sqn":"000000000060","sqnScheme":"NON_TIME_BASED"}' WHERE ueid='208950000000036'
+[2024-06-07 12:33:29.550] [udr_db] [info] [UE Id 208950000000036] AuthenticationSubscription PATCH: [{"from":"","op":"replace","path":"","value":"{\"lastIndexes\":{\"ausf\":0},\"sqn\":\"000000000060\",\"sqnScheme\":\"NON_TIME_BASED\"}"}]
+[2024-06-07 12:33:29.550] [udr_app] [info] [UE Id 208950000000036] Successful modified the Authentication subscription data
+[2024-06-07 12:33:29.550] [udr_server] [debug] HTTP Response code 204 (HTTP Version 2).
+
+[2024-06-07 12:33:29.587] [udr_server] [info] Received response: 
+[2024-06-07 12:33:29.587] [udr_app] [info] [UE Id 208950000000036] Retrieve the Authentication Subscription data of an UE
+[2024-06-07 12:33:29.587] [udr_db] [info] [UE Id 208950000000036] Query Authentication Subscription
+[2024-06-07 12:33:29.587] [udr_db] [info] [UE Id 208950000000036] MySQL Query: SELECT * FROM AuthenticationSubscription WHERE ueid='208950000000036'
+[2024-06-07 12:33:29.590] [udr_db] [debug] [UE Id 208950000000036] Row [0]: ueid 
+[2024-06-07 12:33:29.590] [udr_db] [debug] [UE Id 208950000000036] Row [1]: authenticationMethod 
+[2024-06-07 12:33:29.590] [udr_db] [debug] [UE Id 208950000000036] Row [2]: encPermanentKey 
+[2024-06-07 12:33:29.590] [udr_db] [debug] [UE Id 208950000000036] Row [3]: protectionParameterId 
+[2024-06-07 12:33:29.590] [udr_db] [debug] [UE Id 208950000000036] Row [4]: sequenceNumber 
+[2024-06-07 12:33:29.590] [udr_db] [debug] [UE Id 208950000000036] Row [5]: authenticationManagementField 
+[2024-06-07 12:33:29.590] [udr_db] [debug] [UE Id 208950000000036] Row [6]: algorithmId 
+[2024-06-07 12:33:29.590] [udr_db] [debug] [UE Id 208950000000036] Row [7]: encOpcKey 
+[2024-06-07 12:33:29.590] [udr_db] [debug] [UE Id 208950000000036] Row [8]: encTopcKey 
+[2024-06-07 12:33:29.590] [udr_db] [debug] [UE Id 208950000000036] Row [9]: vectorGenerationInHss 
+[2024-06-07 12:33:29.590] [udr_db] [debug] [UE Id 208950000000036] Row [10]: n5gcAuthMethod 
+[2024-06-07 12:33:29.590] [udr_db] [debug] [UE Id 208950000000036] Row [11]: rgAuthenticationInd 
+[2024-06-07 12:33:29.590] [udr_db] [debug] [UE Id 208950000000036] Row [12]: supi 
+[2024-06-07 12:33:29.590] [udr_app] [info] [UE Id 208950000000036] AuthenticationSubscription: {"algorithmId":"milenage","authenticationManagementField":"8000","authenticationMethod":"5G_AKA","encOpcKey":"63bfa50ee6523365ff14c1f45f88737d","encPermanentKey":"0C0A34601D4F07677303652C0462535B","protectionParameterId":"0C0A34601D4F07677303652C0462535B","sequenceNumber":{"lastIndexes":{"ausf":0},"sqn":"000000000060","sqnScheme":"NON_TIME_BASED"},"supi":"208950000000036"}
+[2024-06-07 12:33:29.590] [udr_server] [info] HTTP Response code 200 (HTTP Version 2).
+
+[2024-06-07 12:33:29.594] [udr_app] [info] [UE Id 208950000000036] Store the Authentication Status data of an UE
+[2024-06-07 12:33:29.594] [udr_db] [info] [UE Id 208950000000036] MySQL query: SELECT * FROM AuthenticationStatus WHERE ueid='208950000000036'
+[2024-06-07 12:33:29.596] [udr_db] [info] [UE Id 208950000000036] MySQL query: INSERT INTO AuthenticationStatus SET ueid='208950000000036',nfInstanceId='400346f4-087e-40b1-a4cd-00566953999d',success=1,timeStamp='2024-06-07T12:33:29Z',authType='5G_AKA',servingNetworkName='5G:mnc095.mcc208.3gppnetwork.org',authRemovalInd=0
+[2024-06-07 12:33:29.612] [udr_db] [info] [UE Id 208950000000036] AuthenticationStatus PUT: {"authRemovalInd":false,"authType":"5G_AKA","nfInstanceId":"400346f4-087e-40b1-a4cd-00566953999d","servingNetworkName":"5G:mnc095.mcc208.3gppnetwork.org","success":true,"timeStamp":"2024-06-07T12:33:29Z"}
+[2024-06-07 12:33:29.613] [udr_app] [info] [UE Id 208950000000036] Successful stored the Authentication Status data
+[2024-06-07 12:33:29.613] [udr_server] [debug] HTTP Response code 204 (HTTP Version 2).
+
+[2024-06-07 12:33:30.354] [udr_server] [info] Received response: 
+[2024-06-07 12:33:30.355] [udr_app] [info] [UE Id 208950000000037] Retrieve the Authentication Subscription data of an UE
+[2024-06-07 12:33:30.355] [udr_db] [info] [UE Id 208950000000037] Query Authentication Subscription
+[2024-06-07 12:33:30.355] [udr_db] [info] [UE Id 208950000000037] MySQL Query: SELECT * FROM AuthenticationSubscription WHERE ueid='208950000000037'
+[2024-06-07 12:33:30.355] [udr_db] [debug] [UE Id 208950000000037] Row [0]: ueid 
+[2024-06-07 12:33:30.355] [udr_db] [debug] [UE Id 208950000000037] Row [1]: authenticationMethod 
+[2024-06-07 12:33:30.355] [udr_db] [debug] [UE Id 208950000000037] Row [2]: encPermanentKey 
+[2024-06-07 12:33:30.355] [udr_db] [debug] [UE Id 208950000000037] Row [3]: protectionParameterId 
+[2024-06-07 12:33:30.355] [udr_db] [debug] [UE Id 208950000000037] Row [4]: sequenceNumber 
+[2024-06-07 12:33:30.355] [udr_db] [debug] [UE Id 208950000000037] Row [5]: authenticationManagementField 
+[2024-06-07 12:33:30.355] [udr_db] [debug] [UE Id 208950000000037] Row [6]: algorithmId 
+[2024-06-07 12:33:30.355] [udr_db] [debug] [UE Id 208950000000037] Row [7]: encOpcKey 
+[2024-06-07 12:33:30.355] [udr_db] [debug] [UE Id 208950000000037] Row [8]: encTopcKey 
+[2024-06-07 12:33:30.355] [udr_db] [debug] [UE Id 208950000000037] Row [9]: vectorGenerationInHss 
+[2024-06-07 12:33:30.355] [udr_db] [debug] [UE Id 208950000000037] Row [10]: n5gcAuthMethod 
+[2024-06-07 12:33:30.355] [udr_db] [debug] [UE Id 208950000000037] Row [11]: rgAuthenticationInd 
+[2024-06-07 12:33:30.355] [udr_db] [debug] [UE Id 208950000000037] Row [12]: supi 
+[2024-06-07 12:33:30.356] [udr_app] [info] [UE Id 208950000000037] AuthenticationSubscription: {"algorithmId":"milenage","authenticationManagementField":"8000","authenticationMethod":"5G_AKA","encOpcKey":"63bfa50ee6523365ff14c1f45f88737d","encPermanentKey":"0C0A34601D4F07677303652C0462535B","protectionParameterId":"0C0A34601D4F07677303652C0462535B","sequenceNumber":{"lastIndexes":{"ausf":0},"sqn":"000000000020","sqnScheme":"NON_TIME_BASED"},"supi":"208950000000037"}
+[2024-06-07 12:33:30.356] [udr_server] [info] HTTP Response code 200 (HTTP Version 2).
+
+[2024-06-07 12:33:30.362] [udr_app] [info] [UE Id 208950000000037] Modify the Authentication Subscription data of an UE
+[2024-06-07 12:33:30.362] [udr_db] [info] [UE Id 208950000000037] MySQL Query: SELECT * from AuthenticationSubscription WHERE ueid='208950000000037'
+[2024-06-07 12:33:30.363] [udr_db] [info] [UE Id 208950000000037] MySQL Update command UPDATE AuthenticationSubscription SET sequenceNumber='{"lastIndexes":{"ausf":0},"sqn":"000000000060","sqnScheme":"NON_TIME_BASED"}' WHERE ueid='208950000000037'
+[2024-06-07 12:33:30.371] [udr_db] [info] [UE Id 208950000000037] AuthenticationSubscription PATCH: [{"from":"","op":"replace","path":"","value":"{\"lastIndexes\":{\"ausf\":0},\"sqn\":\"000000000060\",\"sqnScheme\":\"NON_TIME_BASED\"}"}]
+[2024-06-07 12:33:30.372] [udr_app] [info] [UE Id 208950000000037] Successful modified the Authentication subscription data
+[2024-06-07 12:33:30.372] [udr_server] [debug] HTTP Response code 204 (HTTP Version 2).
+
+[2024-06-07 12:33:30.386] [udr_server] [info] Received response: 
+[2024-06-07 12:33:30.386] [udr_app] [info] [UE Id 208950000000037] Retrieve the Authentication Subscription data of an UE
+[2024-06-07 12:33:30.386] [udr_db] [info] [UE Id 208950000000037] Query Authentication Subscription
+[2024-06-07 12:33:30.386] [udr_db] [info] [UE Id 208950000000037] MySQL Query: SELECT * FROM AuthenticationSubscription WHERE ueid='208950000000037'
+[2024-06-07 12:33:30.387] [udr_db] [debug] [UE Id 208950000000037] Row [0]: ueid 
+[2024-06-07 12:33:30.387] [udr_db] [debug] [UE Id 208950000000037] Row [1]: authenticationMethod 
+[2024-06-07 12:33:30.387] [udr_db] [debug] [UE Id 208950000000037] Row [2]: encPermanentKey 
+[2024-06-07 12:33:30.387] [udr_db] [debug] [UE Id 208950000000037] Row [3]: protectionParameterId 
+[2024-06-07 12:33:30.387] [udr_db] [debug] [UE Id 208950000000037] Row [4]: sequenceNumber 
+[2024-06-07 12:33:30.387] [udr_db] [debug] [UE Id 208950000000037] Row [5]: authenticationManagementField 
+[2024-06-07 12:33:30.387] [udr_db] [debug] [UE Id 208950000000037] Row [6]: algorithmId 
+[2024-06-07 12:33:30.387] [udr_db] [debug] [UE Id 208950000000037] Row [7]: encOpcKey 
+[2024-06-07 12:33:30.387] [udr_db] [debug] [UE Id 208950000000037] Row [8]: encTopcKey 
+[2024-06-07 12:33:30.387] [udr_db] [debug] [UE Id 208950000000037] Row [9]: vectorGenerationInHss 
+[2024-06-07 12:33:30.387] [udr_db] [debug] [UE Id 208950000000037] Row [10]: n5gcAuthMethod 
+[2024-06-07 12:33:30.387] [udr_db] [debug] [UE Id 208950000000037] Row [11]: rgAuthenticationInd 
+[2024-06-07 12:33:30.387] [udr_db] [debug] [UE Id 208950000000037] Row [12]: supi 
+[2024-06-07 12:33:30.387] [udr_app] [info] [UE Id 208950000000037] AuthenticationSubscription: {"algorithmId":"milenage","authenticationManagementField":"8000","authenticationMethod":"5G_AKA","encOpcKey":"63bfa50ee6523365ff14c1f45f88737d","encPermanentKey":"0C0A34601D4F07677303652C0462535B","protectionParameterId":"0C0A34601D4F07677303652C0462535B","sequenceNumber":{"lastIndexes":{"ausf":0},"sqn":"000000000060","sqnScheme":"NON_TIME_BASED"},"supi":"208950000000037"}
+[2024-06-07 12:33:30.387] [udr_server] [info] HTTP Response code 200 (HTTP Version 2).
+
+[2024-06-07 12:33:30.392] [udr_app] [info] [UE Id 208950000000037] Store the Authentication Status data of an UE
+[2024-06-07 12:33:30.392] [udr_db] [info] [UE Id 208950000000037] MySQL query: SELECT * FROM AuthenticationStatus WHERE ueid='208950000000037'
+[2024-06-07 12:33:30.394] [udr_db] [info] [UE Id 208950000000037] MySQL query: INSERT INTO AuthenticationStatus SET ueid='208950000000037',nfInstanceId='400346f4-087e-40b1-a4cd-00566953999d',success=1,timeStamp='2024-06-07T12:33:30Z',authType='5G_AKA',servingNetworkName='5G:mnc095.mcc208.3gppnetwork.org',authRemovalInd=0
+[2024-06-07 12:33:30.401] [udr_db] [info] [UE Id 208950000000037] AuthenticationStatus PUT: {"authRemovalInd":false,"authType":"5G_AKA","nfInstanceId":"400346f4-087e-40b1-a4cd-00566953999d","servingNetworkName":"5G:mnc095.mcc208.3gppnetwork.org","success":true,"timeStamp":"2024-06-07T12:33:30Z"}
+[2024-06-07 12:33:30.401] [udr_app] [info] [UE Id 208950000000037] Successful stored the Authentication Status data
+[2024-06-07 12:33:30.401] [udr_server] [debug] HTTP Response code 204 (HTTP Version 2).
+
+[2024-06-07 12:34:40.289] [udr_db] [debug] DB Connection handling, current time: Fri Jun  7 12:34:40 2024
+
+[2024-06-07 12:39:40.690] [udr_db] [debug] DB Connection handling, current time: Fri Jun  7 12:39:40 2024
+
+[2024-06-07 12:44:41.021] [udr_db] [debug] DB Connection handling, current time: Fri Jun  7 12:44:41 2024
+
+[2024-06-07 12:49:41.397] [udr_db] [debug] DB Connection handling, current time: Fri Jun  7 12:49:41 2024
+
+[2024-06-07 12:54:41.876] [udr_db] [debug] DB Connection handling, current time: Fri Jun  7 12:54:41 2024
+
+[2024-06-07 12:59:42.321] [udr_db] [debug] DB Connection handling, current time: Fri Jun  7 12:59:42 2024
+

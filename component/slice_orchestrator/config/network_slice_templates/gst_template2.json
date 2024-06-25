@@ -1,0 +1,26 @@
+{
+    "gst": {
+      "attributes": {
+        "service_type": {
+          "type": "string",
+          "allowed_values": ["eMBB", "URLLC", "mMTC"]
+        },
+        "latency": {
+          "type": "object",
+          "properties": {
+            "value": {"type": "number"},
+            "unit": {"type": "string", "enum": ["ms"]}
+          }
+        },
+        "throughput": {
+          "type": "object",
+          "properties": {
+            "value": {"type": "number"},
+            "unit": {"type": "string", "enum": ["Mbps"]}
+          }
+        }
+      }
+    }
+  }
+  
+  

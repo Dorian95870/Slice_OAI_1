@@ -1,0 +1,326 @@
+[2024-06-07 12:14:39.341] [ausf_server] [start] Options parsed
+[2024-06-07 12:14:39.341] [ausf_server] [debug] Parsing the configuration file, file type YAML.
+[2024-06-07 12:14:39.341] [config ] [info] Reading NF configuration from /openair-ausf/etc/config.yaml
+[2024-06-07 12:14:39.392] [config ] [debug] Unknown NF amf in configuration. Ignored
+[2024-06-07 12:14:39.392] [config ] [debug] Unknown NF udr in configuration. Ignored
+[2024-06-07 12:14:39.392] [config ] [debug] Unknown NF nssf in configuration. Ignored
+[2024-06-07 12:14:39.393] [config ] [debug] Validating configuration of log_level
+[2024-06-07 12:14:39.393] [config ] [debug] Validating configuration of register_nf
+[2024-06-07 12:14:39.393] [config ] [debug] Validating configuration of http_version
+[2024-06-07 12:14:39.393] [config ] [debug] Validating configuration of curl_timeout
+[2024-06-07 12:14:39.393] [config ] [debug] Validating configuration of NRF
+[2024-06-07 12:14:39.393] [config ] [debug] Validating configuration of UDM
+[2024-06-07 12:14:39.393] [config ] [debug] Validating configuration of AUSF
+[2024-06-07 12:14:39.400] [config ] [debug] Validating configuration of database
+[2024-06-07 12:14:39.401] [config ] [info] ==== OPENAIRINTERFACE ausf vBranch: HEAD Abrev. Hash: 2884d6e Date: Tue Dec 12 12:23:21 2023 +0000 ====
+[2024-06-07 12:14:39.401] [config ] [info] Basic Configuration:
+[2024-06-07 12:14:39.401] [config ] [info]   - log_level..................................: debug
+[2024-06-07 12:14:39.401] [config ] [info]   - register_nf................................: Yes
+[2024-06-07 12:14:39.401] [config ] [info]   - http_version...............................: 2
+[2024-06-07 12:14:39.401] [config ] [info]   - Curl Timeout...............................: 3000 (ms)
+[2024-06-07 12:14:39.401] [config ] [info]     AUSF:
+[2024-06-07 12:14:39.401] [config ] [info]     - host.....................................: oai-ausf
+[2024-06-07 12:14:39.401] [config ] [info]     - SBI
+[2024-06-07 12:14:39.401] [config ] [info]       + URL....................................: http://oai-ausf:8080
+[2024-06-07 12:14:39.401] [config ] [info]       + API Version............................: v1
+[2024-06-07 12:14:39.401] [config ] [info]       + IPv4 Address ..........................: 192.168.70.135
+[2024-06-07 12:14:39.401] [config ] [info]     - Instance ID..............................: 0
+[2024-06-07 12:14:39.401] [config ] [info]     - PID Directory............................: 
+[2024-06-07 12:14:39.401] [config ] [info]     - AUSF Name................................: 
+[2024-06-07 12:14:39.401] [config ] [info] Peer NF Configuration:
+[2024-06-07 12:14:39.401] [ausf_app] [start] Starting...
+[2024-06-07 12:14:39.401] [ausf_app] [debug] - NF instance info
+[2024-06-07 12:14:39.401] [ausf_app] [debug]     Instance ID: 998ce812-f364-424e-8107-0c115468892a
+[2024-06-07 12:14:39.401] [ausf_app] [debug]     Instance name: OAI-AUSF
+[2024-06-07 12:14:39.401] [ausf_app] [debug]     Instance type: AUSF
+[2024-06-07 12:14:39.401] [ausf_app] [debug]     Instance fqdn: 
+[2024-06-07 12:14:39.401] [ausf_app] [debug]     Status: REGISTERED
+[2024-06-07 12:14:39.401] [ausf_app] [debug]     HeartBeat timer: 50
+[2024-06-07 12:14:39.401] [ausf_app] [debug]     Priority: 1
+[2024-06-07 12:14:39.401] [ausf_app] [debug]     Capacity: 100
+[2024-06-07 12:14:39.401] [ausf_app] [debug]     IPv4 Addr:
+[2024-06-07 12:14:39.401] [ausf_app] [debug]         192.168.70.135
+[2024-06-07 12:14:39.401] [ausf_app] [debug] 	AUSF Info
+[2024-06-07 12:14:39.401] [ausf_app] [debug] 		GroupId: oai-ausf-testgroupid
+[2024-06-07 12:14:39.401] [ausf_app] [debug] 		 SupiRanges: Start - q0930j0c80283ncjf, End - , Pattern - 209238210938
+[2024-06-07 12:14:39.401] [ausf_app] [debug] 		 Routing Indicators: 0210
+[2024-06-07 12:14:39.401] [ausf_app] [debug] 		 Routing Indicators: 9876
+[2024-06-07 12:14:39.401] [ausf_app] [debug] ausf profile to JSON:
+ {"ausfInfo":{"groupId":"oai-ausf-testgroupid","routingIndicators":["0210","9876"],"supiRanges":[{"end":"","pattern":"209238210938","start":"q0930j0c80283ncjf"}]},"capacity":100,"fqdn":"","heartBeatTimer":50,"ipv4Addresses":["192.168.70.135"],"nfInstanceId":"998ce812-f364-424e-8107-0c115468892a","nfInstanceName":"OAI-AUSF","nfStatus":"REGISTERED","nfType":"AUSF","priority":1,"sNssais":[]}
+[2024-06-07 12:14:39.401] [ausf_nrf] [info] Sending NF registeration request
+[2024-06-07 12:14:39.401] [ausf_app] [info] Send HTTP message with body {"ausfInfo":{"groupId":"oai-ausf-testgroupid","routingIndicators":["0210","9876"],"supiRanges":[{"end":"","pattern":"209238210938","start":"q0930j0c80283ncjf"}]},"capacity":100,"fqdn":"","heartBeatTimer":50,"ipv4Addresses":["192.168.70.135"],"nfInstanceId":"998ce812-f364-424e-8107-0c115468892a","nfInstanceName":"OAI-AUSF","nfStatus":"REGISTERED","nfType":"AUSF","priority":1,"sNssais":[]}
+* Could not resolve host: oai-nrf
+* Closing connection 0
+[2024-06-07 12:14:39.426] [ausf_app] [info] Get response with HTTP code (0)
+[2024-06-07 12:14:39.426] [ausf_app] [info] Cannot get response when calling http://oai-nrf:80/nnrf-nfm/v1/nf-instances/998ce812-f364-424e-8107-0c115468892a
+[2024-06-07 12:14:39.426] [ausf_nrf] [info] NF registeration procedure failed
+[2024-06-07 12:14:39.426] [ausf_app] [info] NRF TASK Created 
+[2024-06-07 12:14:39.426] [ausf_app] [start] Started
+[2024-06-07 12:14:39.428] [ausf_server] [info] HTTP2 server started
+[2024-06-07 12:33:03.277] [ausf_server] [info] Received ue_authentications_post Request
+[2024-06-07 12:33:03.277] [ausf_app] [info] Handle UE Authentication Request
+[2024-06-07 12:33:03.277] [ausf_app] [info] ServingNetworkName 5G:mnc095.mcc208.3gppnetwork.org
+[2024-06-07 12:33:03.277] [ausf_app] [info] supiOrSuci 208950000000035
+[2024-06-07 12:33:03.277] [ausf_app] [debug] UDM's URI http://oai-udm:8080/nudm-ueau/v1/208950000000035/security-information/generate-auth-data
+[2024-06-07 12:33:03.277] [ausf_app] [info] Received authInfo from AMF without ResynchronizationInfo IE
+[2024-06-07 12:33:03.277] [ausf_app] [info] Send HTTP message with body {"ausfInstanceId":"400346f4-087e-40b1-a4cd-00566953999d","servingNetworkName":"5G:mnc095.mcc208.3gppnetwork.org"}
+*   Trying 192.168.70.134:8080...
+* Connected to oai-udm (192.168.70.134) port 8080 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x75f0f801a640)
+> POST /nudm-ueau/v1/208950000000035/security-information/generate-auth-data HTTP/2
+Host: oai-udm:8080
+accept: */*
+content-type: application/json
+content-length: 113
+
+* We are completely uploaded and fine
+< HTTP/2 200 
+[2024-06-07 12:33:03.294] [ausf_app] [info] Get response with HTTP code (200)
+< date: Fri, 07 Jun 2024 12:33:03 GMT
+< content-type: application/json
+< 
+* Connection #0 to host oai-udm left intact
+[2024-06-07 12:33:03.294] [ausf_app] [info] Response from UDM: {"authType":"5G_AKA","authenticationVector":{"autn":"d10ffe894b6d80006e99a6a6e2067445","avType":"5G_HE_AKA","kausf":"4bb3a5e27e25daf8d18f6d0b0a6f41773f1d15cda8bb8b6e4e6d5c95f54d7df9","rand":"8b483610d28abee7193385419f30864d","xresStar":"c726fb160c273b6c5a9d1a6660bcea98"}}
+[2024-06-07 12:33:03.294] [ausf_app] [debug] authType 5G_AKA
+[2024-06-07 12:33:03.294] [ausf_app] [debug] autn_udm d10ffe894b6d80006e99a6a6e2067445
+[2024-06-07 12:33:03.294] [ausf_app] [debug] avType_udm 5G_HE_AKA
+[2024-06-07 12:33:03.294] [ausf_app] [debug] kausf_udm 4bb3a5e27e25daf8d18f6d0b0a6f41773f1d15cda8bb8b6e4e6d5c95f54d7df9
+[2024-06-07 12:33:03.294] [ausf_app] [debug] rand_udm 8b483610d28abee7193385419f30864d
+[2024-06-07 12:33:03.294] [ausf_app] [debug] xres*_udm c726fb160c273b6c5a9d1a6660bcea98
+[2024-06-07 12:33:03.294] [ausf_app] [debug] Generating 5G AV
+[2024-06-07 12:33:03.294] [ausf_app] [debug] HXresStar calculated:
+ 108eedf336bb6d228f7cfbc8dbd72487
+[2024-06-07 12:33:03.294] [ausf_app] [debug] Derive_kseaf ...
+[2024-06-07 12:33:03.294] [ausf_app] [debug] SNN: 5G:mnc095.mcc208.3gppnetwork.org
+derive_kseaf Kausf
+[2024-06-07 12:33:03.294] [ausf_server] [debug] derive_kseaf Kausf
+4b b3 a5 e2 7e 25 da f8 d1 8f 6d b a 6f 41 77 3f 1d 15 cd a8 bb 8b 6e 4e 6d 5c 95 f5 4d 7d f9 
+derive_kseaf Kseaf
+[2024-06-07 12:33:03.294] [ausf_server] [debug] derive_kseaf Kseaf
+ea e5 18 fc ef 27 6c 22 5d 4d b6 6 a8 51 62 ac 5c ea 39 92 bb 59 53 14 1e a5 e3 e3 f1 ce 8e d4 
+[2024-06-07 12:33:03.294] [ausf_app] [debug] Kseaf calculated:
+ eae518fcef276c225d4db606a85162ac5cea3992bb5953141ea5e3e3f1ce8ed4
+[2024-06-07 12:33:03.294] [ausf_app] [debug] Create a new security context with SUPI 
+[2024-06-07 12:33:03.294] [ausf_app] [debug] Auth Response:
+ {"5gAuthData":{"autn":"d10ffe894b6d80006e99a6a6e2067445","hxresStar":"108eedf336bb6d228f7cfbc8dbd72487","rand":"8b483610d28abee7193385419f30864d"},"_links":{"5G_AKA":{"href":"http://192.168.70.135:8080/nausf-auth/v1/ue-authentications/d10ffe894b6d80006e99a6a6e2067445/5g-aka-confirmation"}},"authType":"5G_AKA"}
+[2024-06-07 12:33:03.294] [ausf_server] [debug] Auth response:
+ {"5gAuthData":{"autn":"d10ffe894b6d80006e99a6a6e2067445","hxresStar":"108eedf336bb6d228f7cfbc8dbd72487","rand":"8b483610d28abee7193385419f30864d"},"_links":{"5G_AKA":{"href":"http://192.168.70.135:8080/nausf-auth/v1/ue-authentications/d10ffe894b6d80006e99a6a6e2067445/5g-aka-confirmation"}},"authType":"5G_AKA"}
+[2024-06-07 12:33:03.294] [ausf_server] [info] Send Auth response to SEAF (Code 201)
+[2024-06-07 12:33:03.296] [ausf_server] [info] Received 5g_aka_confirmation Request
+[2024-06-07 12:33:03.296] [ausf_server] [info] 5gaka confirmation received with authctxID d10ffe894b6d80006e99a6a6e2067445
+[2024-06-07 12:33:03.296] [ausf_app] [debug] Handling 5g-aka-confirmation
+[2024-06-07 12:33:03.296] [ausf_app] [debug] Retrieve security context with authCtxId: 
+[2024-06-07 12:33:03.296] [ausf_app] [info] Received authCtxId d10ffe894b6d80006e99a6a6e2067445
+[2024-06-07 12:33:03.296] [ausf_app] [info] Received res* C726FB160C273B6C5A9D1A6660BCEA98
+[2024-06-07 12:33:03.296] [ausf_app] [debug] authCtxId in AUSF: d10ffe894b6d80006e99a6a6e2067445
+[2024-06-07 12:33:03.296] [ausf_app] [info] AV is up to date, handling received res*...
+[2024-06-07 12:33:03.296] [ausf_app] [debug] xres* in AUSF: c726fb160c273b6c5a9d1a6660bcea98
+[2024-06-07 12:33:03.296] [ausf_app] [debug] xres in AMF: c726fb160c273b6c5a9d1a6660bcea98
+[2024-06-07 12:33:03.296] [ausf_app] [info] Authentication successful by home network!
+[2024-06-07 12:33:03.296] [ausf_app] [debug] UDM's URI: http://oai-udm:8080/nudm-ueau/v1/208950000000035/auth-events
+[2024-06-07 12:33:03.296] [ausf_app] [debug] confirmResultInfo: {"authRemovalInd":false,"authType":"5G_AKA","nfInstanceId":"400346f4-087e-40b1-a4cd-00566953999d","servingNetworkName":"5G:mnc095.mcc208.3gppnetwork.org","success":true,"timeStamp":"2024-06-07T12:33:03Z"}
+[2024-06-07 12:33:03.296] [ausf_app] [info] Send HTTP message with body {"authRemovalInd":false,"authType":"5G_AKA","nfInstanceId":"400346f4-087e-40b1-a4cd-00566953999d","servingNetworkName":"5G:mnc095.mcc208.3gppnetwork.org","success":true,"timeStamp":"2024-06-07T12:33:03Z"}
+*   Trying 192.168.70.134:8080...
+* Connected to oai-udm (192.168.70.134) port 8080 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x75f0f801be20)
+> POST /nudm-ueau/v1/208950000000035/auth-events HTTP/2
+Host: oai-udm:8080
+accept: */*
+content-type: application/json
+content-length: 204
+
+* We are completely uploaded and fine
+[2024-06-07 12:33:03.305] [ausf_app] [info] Get response with HTTP code (201)
+< HTTP/2 201 
+< date: Fri, 07 Jun 2024 12:33:03 GMT
+< content-type: application/json
+< location: http://oai-udr:8080/nudm-ueau/v1/208950000000035/auth-events/8b2496df4ad468a569d9b9e0ea1127840feb496775c46b323808e3acb5214be2
+< 
+* Connection #0 to host oai-udm left intact
+[2024-06-07 12:33:03.305] [ausf_server] [debug] 5g-aka-confirmation response:
+ {"authResult":true,"kseaf":"eae518fcef276c225d4db606a85162ac5cea3992bb5953141ea5e3e3f1ce8ed4","supi":"208950000000035"}
+[2024-06-07 12:33:03.305] [ausf_server] [info] Send 5g-aka-confirmation response to SEAF (Code 200)
+[2024-06-07 12:33:29.521] [ausf_server] [info] Received ue_authentications_post Request
+[2024-06-07 12:33:29.521] [ausf_app] [info] Handle UE Authentication Request
+[2024-06-07 12:33:29.521] [ausf_app] [info] ServingNetworkName 5G:mnc095.mcc208.3gppnetwork.org
+[2024-06-07 12:33:29.521] [ausf_app] [info] supiOrSuci 208950000000036
+[2024-06-07 12:33:29.521] [ausf_app] [debug] UDM's URI http://oai-udm:8080/nudm-ueau/v1/208950000000036/security-information/generate-auth-data
+[2024-06-07 12:33:29.521] [ausf_app] [info] Received authInfo from AMF without ResynchronizationInfo IE
+[2024-06-07 12:33:29.521] [ausf_app] [info] Send HTTP message with body {"ausfInstanceId":"400346f4-087e-40b1-a4cd-00566953999d","servingNetworkName":"5G:mnc095.mcc208.3gppnetwork.org"}
+*   Trying 192.168.70.134:8080...
+* Connected to oai-udm (192.168.70.134) port 8080 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x75f0f801be20)
+> POST /nudm-ueau/v1/208950000000036/security-information/generate-auth-data HTTP/2
+Host: oai-udm:8080
+accept: */*
+content-type: application/json
+content-length: 113
+
+* We are completely uploaded and fine
+< HTTP/2 200 
+< date: Fri, 07 Jun 2024 12:33:29 GMT
+< content-type: application/json
+< 
+* Connection #0 to host oai-udm left intact
+[2024-06-07 12:33:29.552] [ausf_app] [info] Get response with HTTP code (200)
+[2024-06-07 12:33:29.552] [ausf_app] [info] Response from UDM: {"authType":"5G_AKA","authenticationVector":{"autn":"998cdfe57ffe80000c87d5c181fa6172","avType":"5G_HE_AKA","kausf":"4f6193c4a9334ba6a6254150894ff1004425d422a60d8c2f593dcb6493959a3b","rand":"0fd2c4d65b330b5aa64f1b0cb7fdfc4a","xresStar":"6f04d07aa77c6b2816f03d849c83e275"}}
+[2024-06-07 12:33:29.552] [ausf_app] [debug] authType 5G_AKA
+[2024-06-07 12:33:29.552] [ausf_app] [debug] autn_udm 998cdfe57ffe80000c87d5c181fa6172
+[2024-06-07 12:33:29.552] [ausf_app] [debug] avType_udm 5G_HE_AKA
+[2024-06-07 12:33:29.552] [ausf_app] [debug] kausf_udm 4f6193c4a9334ba6a6254150894ff1004425d422a60d8c2f593dcb6493959a3b
+[2024-06-07 12:33:29.552] [ausf_app] [debug] rand_udm 0fd2c4d65b330b5aa64f1b0cb7fdfc4a
+[2024-06-07 12:33:29.552] [ausf_app] [debug] xres*_udm 6f04d07aa77c6b2816f03d849c83e275
+[2024-06-07 12:33:29.552] [ausf_app] [debug] Generating 5G AV
+[2024-06-07 12:33:29.552] [ausf_app] [debug] HXresStar calculated:
+ 380b476fc7feb0339f56060e4fe460bf
+[2024-06-07 12:33:29.552] [ausf_app] [debug] Derive_kseaf ...
+[2024-06-07 12:33:29.552] [ausf_app] [debug] SNN: 5G:mnc095.mcc208.3gppnetwork.org
+derive_kseaf Kausf
+[2024-06-07 12:33:29.552] [ausf_server] [debug] derive_kseaf Kausf
+4f 61 93 c4 a9 33 4b a6 a6 25 41 50 89 4f f1 0 44 25 d4 22 a6 d 8c 2f 59 3d cb 64 93 95 9a 3b 
+derive_kseaf Kseaf
+[2024-06-07 12:33:29.552] [ausf_server] [debug] derive_kseaf Kseaf
+48 fb 36 de a8 b8 68 88 60 aa f5 ab 14 fd 15 38 85 77 32 16 c7 d7 f 78 81 7 ef 7 8e 1e 4b 35 
+[2024-06-07 12:33:29.552] [ausf_app] [debug] Kseaf calculated:
+ 48fb36dea8b8688860aaf5ab14fd153885773216c7d70f788107ef078e1e4b35
+[2024-06-07 12:33:29.552] [ausf_app] [debug] Create a new security context with SUPI 
+[2024-06-07 12:33:29.552] [ausf_app] [debug] Auth Response:
+ {"5gAuthData":{"autn":"998cdfe57ffe80000c87d5c181fa6172","hxresStar":"380b476fc7feb0339f56060e4fe460bf","rand":"0fd2c4d65b330b5aa64f1b0cb7fdfc4a"},"_links":{"5G_AKA":{"href":"http://192.168.70.135:8080/nausf-auth/v1/ue-authentications/998cdfe57ffe80000c87d5c181fa6172/5g-aka-confirmation"}},"authType":"5G_AKA"}
+[2024-06-07 12:33:29.552] [ausf_server] [debug] Auth response:
+ {"5gAuthData":{"autn":"998cdfe57ffe80000c87d5c181fa6172","hxresStar":"380b476fc7feb0339f56060e4fe460bf","rand":"0fd2c4d65b330b5aa64f1b0cb7fdfc4a"},"_links":{"5G_AKA":{"href":"http://192.168.70.135:8080/nausf-auth/v1/ue-authentications/998cdfe57ffe80000c87d5c181fa6172/5g-aka-confirmation"}},"authType":"5G_AKA"}
+[2024-06-07 12:33:29.552] [ausf_server] [info] Send Auth response to SEAF (Code 201)
+[2024-06-07 12:33:29.571] [ausf_server] [info] Received 5g_aka_confirmation Request
+[2024-06-07 12:33:29.571] [ausf_server] [info] 5gaka confirmation received with authctxID 998cdfe57ffe80000c87d5c181fa6172
+[2024-06-07 12:33:29.571] [ausf_app] [debug] Handling 5g-aka-confirmation
+[2024-06-07 12:33:29.571] [ausf_app] [debug] Retrieve security context with authCtxId: 
+[2024-06-07 12:33:29.571] [ausf_app] [info] Received authCtxId 998cdfe57ffe80000c87d5c181fa6172
+[2024-06-07 12:33:29.571] [ausf_app] [info] Received res* 6F04D07AA77C6B2816F03D849C83E275
+[2024-06-07 12:33:29.571] [ausf_app] [debug] authCtxId in AUSF: 998cdfe57ffe80000c87d5c181fa6172
+[2024-06-07 12:33:29.571] [ausf_app] [info] AV is up to date, handling received res*...
+[2024-06-07 12:33:29.571] [ausf_app] [debug] xres* in AUSF: 6f04d07aa77c6b2816f03d849c83e275
+[2024-06-07 12:33:29.571] [ausf_app] [debug] xres in AMF: 6f04d07aa77c6b2816f03d849c83e275
+[2024-06-07 12:33:29.571] [ausf_app] [info] Authentication successful by home network!
+[2024-06-07 12:33:29.571] [ausf_app] [debug] UDM's URI: http://oai-udm:8080/nudm-ueau/v1/208950000000036/auth-events
+[2024-06-07 12:33:29.572] [ausf_app] [debug] confirmResultInfo: {"authRemovalInd":false,"authType":"5G_AKA","nfInstanceId":"400346f4-087e-40b1-a4cd-00566953999d","servingNetworkName":"5G:mnc095.mcc208.3gppnetwork.org","success":true,"timeStamp":"2024-06-07T12:33:29Z"}
+[2024-06-07 12:33:29.572] [ausf_app] [info] Send HTTP message with body {"authRemovalInd":false,"authType":"5G_AKA","nfInstanceId":"400346f4-087e-40b1-a4cd-00566953999d","servingNetworkName":"5G:mnc095.mcc208.3gppnetwork.org","success":true,"timeStamp":"2024-06-07T12:33:29Z"}
+*   Trying 192.168.70.134:8080...
+* Connected to oai-udm (192.168.70.134) port 8080 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x75f0f801be20)
+> POST /nudm-ueau/v1/208950000000036/auth-events HTTP/2
+Host: oai-udm:8080
+accept: */*
+content-type: application/json
+content-length: 204
+
+* We are completely uploaded and fine
+[2024-06-07 12:33:29.621] [ausf_app] [info] Get response with HTTP code (201)
+[2024-06-07 12:33:29.621] [ausf_server] [debug] 5g-aka-confirmation response:
+ {"authResult":true,"kseaf":"48fb36dea8b8688860aaf5ab14fd153885773216c7d70f788107ef078e1e4b35","supi":"208950000000036"}
+[2024-06-07 12:33:29.623] [ausf_server] [info] Send 5g-aka-confirmation response to SEAF (Code 200)
+< HTTP/2 201 
+< date: Fri, 07 Jun 2024 12:33:29 GMT
+< content-type: application/json
+< location: http://oai-udr:8080/nudm-ueau/v1/208950000000036/auth-events/5a5e99942a34f827ae334f0e7a4b435c8522f7f4ecf2622eaf9c7b3581d345e1
+< 
+* Connection #0 to host oai-udm left intact
+[2024-06-07 12:33:30.338] [ausf_server] [info] Received ue_authentications_post Request
+[2024-06-07 12:33:30.338] [ausf_app] [info] Handle UE Authentication Request
+[2024-06-07 12:33:30.338] [ausf_app] [info] ServingNetworkName 5G:mnc095.mcc208.3gppnetwork.org
+[2024-06-07 12:33:30.338] [ausf_app] [info] supiOrSuci 208950000000037
+[2024-06-07 12:33:30.338] [ausf_app] [debug] UDM's URI http://oai-udm:8080/nudm-ueau/v1/208950000000037/security-information/generate-auth-data
+[2024-06-07 12:33:30.338] [ausf_app] [info] Received authInfo from AMF without ResynchronizationInfo IE
+[2024-06-07 12:33:30.338] [ausf_app] [info] Send HTTP message with body {"ausfInstanceId":"400346f4-087e-40b1-a4cd-00566953999d","servingNetworkName":"5G:mnc095.mcc208.3gppnetwork.org"}
+*   Trying 192.168.70.134:8080...
+* Connected to oai-udm (192.168.70.134) port 8080 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x75f0f801be20)
+> POST /nudm-ueau/v1/208950000000037/security-information/generate-auth-data HTTP/2
+Host: oai-udm:8080
+accept: */*
+content-type: application/json
+content-length: 113
+
+* We are completely uploaded and fine
+[2024-06-07 12:33:30.374] [ausf_app] [info] Get response with HTTP code (200)
+[2024-06-07 12:33:30.374] [ausf_app] [info] Response from UDM: {"authType":"5G_AKA","authenticationVector":{"autn":"e631353d009e8000d42c1aaf73055e32","avType":"5G_HE_AKA","kausf":"0442348c8d9950a5378a64fad032cddc647804223c99e5189b9e85168b811f0d","rand":"f888fabd65dacef9bc195a596d09f1db","xresStar":"6b7fc92f781ba05d9cf0305fba671449"}}
+[2024-06-07 12:33:30.374] [ausf_app] [debug] authType 5G_AKA
+[2024-06-07 12:33:30.374] [ausf_app] [debug] autn_udm e631353d009e8000d42c1aaf73055e32
+[2024-06-07 12:33:30.374] [ausf_app] [debug] avType_udm 5G_HE_AKA
+[2024-06-07 12:33:30.374] [ausf_app] [debug] kausf_udm 0442348c8d9950a5378a64fad032cddc647804223c99e5189b9e85168b811f0d
+[2024-06-07 12:33:30.374] [ausf_app] [debug] rand_udm f888fabd65dacef9bc195a596d09f1db
+< HTTP/2 200 
+< date: Fri, 07 Jun 2024 12:33:30 GMT
+[2024-06-07 12:33:30.374] [ausf_app] [debug] xres*_udm 6b7fc92f781ba05d9cf0305fba671449
+[2024-06-07 12:33:30.374] [ausf_app] [debug] Generating 5G AV
+[2024-06-07 12:33:30.374] [ausf_app] [debug] HXresStar calculated:
+ 2a3f08a8145966113ac6bf9d706f0845
+[2024-06-07 12:33:30.374] [ausf_app] [debug] Derive_kseaf ...
+[2024-06-07 12:33:30.374] [ausf_app] [debug] SNN: 5G:mnc095.mcc208.3gppnetwork.org
+derive_kseaf Kausf
+[2024-06-07 12:33:30.374] [ausf_server] [debug] derive_kseaf Kausf
+< content-type: application/json
+< 
+4 42 34 8c 8d 99 50 a5 37 8a 64 fa d0 32 cd dc 64 78 4 22 3c 99 e5 18 9b 9e 85 16 8b 81 1f d 
+* Connection #0 to host oai-udm left intact
+derive_kseaf Kseaf
+[2024-06-07 12:33:30.374] [ausf_server] [debug] derive_kseaf Kseaf
+ed e2 9f 9c bb dd 1d df 39 ff 9c ce a6 9e 3c 56 9e 70 81 ab 94 3b ef 3 a1 3 f9 e3 e3 83 98 98 
+[2024-06-07 12:33:30.374] [ausf_app] [debug] Kseaf calculated:
+ ede29f9cbbdd1ddf39ff9ccea69e3c569e7081ab943bef03a103f9e3e3839898
+[2024-06-07 12:33:30.374] [ausf_app] [debug] Create a new security context with SUPI 
+[2024-06-07 12:33:30.374] [ausf_app] [debug] Auth Response:
+ {"5gAuthData":{"autn":"e631353d009e8000d42c1aaf73055e32","hxresStar":"2a3f08a8145966113ac6bf9d706f0845","rand":"f888fabd65dacef9bc195a596d09f1db"},"_links":{"5G_AKA":{"href":"http://192.168.70.135:8080/nausf-auth/v1/ue-authentications/e631353d009e8000d42c1aaf73055e32/5g-aka-confirmation"}},"authType":"5G_AKA"}
+[2024-06-07 12:33:30.375] [ausf_server] [debug] Auth response:
+ {"5gAuthData":{"autn":"e631353d009e8000d42c1aaf73055e32","hxresStar":"2a3f08a8145966113ac6bf9d706f0845","rand":"f888fabd65dacef9bc195a596d09f1db"},"_links":{"5G_AKA":{"href":"http://192.168.70.135:8080/nausf-auth/v1/ue-authentications/e631353d009e8000d42c1aaf73055e32/5g-aka-confirmation"}},"authType":"5G_AKA"}
+[2024-06-07 12:33:30.375] [ausf_server] [info] Send Auth response to SEAF (Code 201)
+[2024-06-07 12:33:30.381] [ausf_server] [info] Received 5g_aka_confirmation Request
+[2024-06-07 12:33:30.381] [ausf_server] [info] 5gaka confirmation received with authctxID e631353d009e8000d42c1aaf73055e32
+[2024-06-07 12:33:30.381] [ausf_app] [debug] Handling 5g-aka-confirmation
+[2024-06-07 12:33:30.381] [ausf_app] [debug] Retrieve security context with authCtxId: 
+[2024-06-07 12:33:30.381] [ausf_app] [info] Received authCtxId e631353d009e8000d42c1aaf73055e32
+[2024-06-07 12:33:30.381] [ausf_app] [info] Received res* 6B7FC92F781BA05D9CF0305FBA671449
+[2024-06-07 12:33:30.381] [ausf_app] [debug] authCtxId in AUSF: e631353d009e8000d42c1aaf73055e32
+[2024-06-07 12:33:30.381] [ausf_app] [info] AV is up to date, handling received res*...
+[2024-06-07 12:33:30.381] [ausf_app] [debug] xres* in AUSF: 6b7fc92f781ba05d9cf0305fba671449
+[2024-06-07 12:33:30.381] [ausf_app] [debug] xres in AMF: 6b7fc92f781ba05d9cf0305fba671449
+[2024-06-07 12:33:30.381] [ausf_app] [info] Authentication successful by home network!
+[2024-06-07 12:33:30.381] [ausf_app] [debug] UDM's URI: http://oai-udm:8080/nudm-ueau/v1/208950000000037/auth-events
+[2024-06-07 12:33:30.381] [ausf_app] [debug] confirmResultInfo: {"authRemovalInd":false,"authType":"5G_AKA","nfInstanceId":"400346f4-087e-40b1-a4cd-00566953999d","servingNetworkName":"5G:mnc095.mcc208.3gppnetwork.org","success":true,"timeStamp":"2024-06-07T12:33:30Z"}
+[2024-06-07 12:33:30.381] [ausf_app] [info] Send HTTP message with body {"authRemovalInd":false,"authType":"5G_AKA","nfInstanceId":"400346f4-087e-40b1-a4cd-00566953999d","servingNetworkName":"5G:mnc095.mcc208.3gppnetwork.org","success":true,"timeStamp":"2024-06-07T12:33:30Z"}
+*   Trying 192.168.70.134:8080...
+* Connected to oai-udm (192.168.70.134) port 8080 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x75f0f801be20)
+> POST /nudm-ueau/v1/208950000000037/auth-events HTTP/2
+Host: oai-udm:8080
+accept: */*
+content-type: application/json
+content-length: 204
+
+* We are completely uploaded and fine
+[2024-06-07 12:33:30.404] [ausf_app] [info] Get response with HTTP code (201)
+< HTTP/2 201 
+< date: Fri, 07 Jun 2024 12:33:30 GMT
+< content-type: application/json
+< location: http://oai-udr:8080/nudm-ueau/v1/208950000000037/auth-events/1da972568409d8a4c969a242ca3b2dbacf021ec32839ae39d49e51af873c839f
+< 
+* Connection #0 to host oai-udm left intact
+[2024-06-07 12:33:30.405] [ausf_server] [debug] 5g-aka-confirmation response:
+ {"authResult":true,"kseaf":"ede29f9cbbdd1ddf39ff9ccea69e3c569e7081ab943bef03a103f9e3e3839898","supi":"208950000000037"}
+[2024-06-07 12:33:30.405] [ausf_server] [info] Send 5g-aka-confirmation response to SEAF (Code 200)

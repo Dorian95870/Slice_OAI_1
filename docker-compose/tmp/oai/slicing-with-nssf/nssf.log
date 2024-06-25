@@ -1,0 +1,54 @@
+[2024-06-07 12:14:38.186] [config ] [info] Reading NF configuration from /openair-nssf/etc/config.yaml
+[2024-06-07 12:14:38.207] [config ] [debug] Unknown NF amf in configuration. Ignored
+[2024-06-07 12:14:38.207] [config ] [debug] Unknown NF udm in configuration. Ignored
+[2024-06-07 12:14:38.207] [config ] [debug] Unknown NF udr in configuration. Ignored
+[2024-06-07 12:14:38.207] [config ] [debug] Unknown NF ausf in configuration. Ignored
+[2024-06-07 12:14:38.207] [config ] [debug] Validating configuration of log_level
+[2024-06-07 12:14:38.207] [config ] [debug] Validating configuration of register_nf
+[2024-06-07 12:14:38.207] [config ] [debug] Validating configuration of http_version
+[2024-06-07 12:14:38.207] [config ] [debug] Validating configuration of curl_timeout
+[2024-06-07 12:14:38.207] [config ] [debug] Validating configuration of nrf
+[2024-06-07 12:14:38.210] [config ] [debug] Validating configuration of nssf
+[2024-06-07 12:14:38.214] [config ] [debug] Validating configuration of database
+[2024-06-07 12:14:38.232] [config ] [info] ==== OPENAIRINTERFACE nssf vBranch: HEAD Abrev. Hash: ad69d9a Date: Tue Dec 12 15:05:03 2023 +0000 ====
+[2024-06-07 12:14:38.232] [config ] [info] Basic Configuration:
+[2024-06-07 12:14:38.232] [config ] [info]   - log_level..................................: debug
+[2024-06-07 12:14:38.232] [config ] [info]   - register_nf................................: Yes
+[2024-06-07 12:14:38.232] [config ] [info]   - http_version...............................: 2
+[2024-06-07 12:14:38.232] [config ] [info]   - Curl Timeout...............................: 3000 (ms)
+[2024-06-07 12:14:38.232] [config ] [info] nssf:
+[2024-06-07 12:14:38.232] [config ] [info]   - host.......................................: oai-nssf
+[2024-06-07 12:14:38.232] [config ] [info]   - SBI
+[2024-06-07 12:14:38.232] [config ] [info]     + URL......................................: http://oai-nssf:8080
+[2024-06-07 12:14:38.232] [config ] [info]     + API Version..............................: v1
+[2024-06-07 12:14:38.232] [config ] [info]     + IPv4 Address ............................: 192.168.70.132
+[2024-06-07 12:14:38.232] [config ] [info]   - Slice Config Path..........................: /openair-nssf/etc/nssf_slice_config.yaml
+[2024-06-07 12:14:38.232] [config ] [info] Peer NF Configuration:
+[2024-06-07 12:14:38.232] [config ] [info]   nrf:
+[2024-06-07 12:14:38.232] [config ] [info]     - host.....................................: oai-nrf
+[2024-06-07 12:14:38.232] [config ] [info]     - SBI
+[2024-06-07 12:14:38.232] [config ] [info]       + URL....................................: http://oai-nrf:80
+[2024-06-07 12:14:38.232] [config ] [info]       + API Version............................: v1
+[2024-06-07 12:14:38.232] [nssf_sbi] [info] HTTP2 server started
+[2024-06-07 12:33:03.518] [nssf_sbi] [debug] Received request for NS Selection - (HTTP_VERSION 2)
+[2024-06-07 12:33:03.518] [nssf_sbi] [debug] QueryString: nf-type=AMF&nf-id=725699ae-8f43-4e21-b838-baedba678ce0&slice-info-request-for-pdu-session={"roamingIndication":"NON_ROAMING","sNssai":{"sd":"128","sst":128}}
+[2024-06-07 12:33:03.518] [nssf_sbi] [info]  Query_PARAM::NF_TYPE - AMF
+[2024-06-07 12:33:03.518] [nssf_sbi] [info]  Query_PARAM::NF_ID - 725699ae-8f43-4e21-b838-baedba678ce0
+[2024-06-07 12:33:03.519] [nssf_sbi] [info]  Query_PARAM::SLICE_INFO_PDU_SESSION - {"roamingIndication":"NON_ROAMING","sNssai":{"sd":"128","sst":128}}
+[2024-06-07 12:33:03.519] [nssf_app] [info] 
+[2024-06-07 12:33:03.519] [nssf_sbi] [info] NS Selection: Got a request with slice info for PDU Session, Instance ID: 725699ae-8f43-4e21-b838-baedba678ce0
+[2024-06-07 12:33:03.519] [nssf_app] [info] NS Selection: Handle case - PDU Session (HTTP_VERSION 2)
+[2024-06-07 12:33:03.519] [nssf_app] [debug] Validating S-NSSAI for NSI
+[2024-06-07 12:33:03.519] [nssf_app] [info] NS Selection: Authorized Network Slice Info Returned !!!
+[2024-06-07 12:33:03.519] [nssf_app] [info] //---------------------------------------------------------
+[2024-06-07 12:33:34.424] [nssf_sbi] [debug] Received request for NS Selection - (HTTP_VERSION 2)
+[2024-06-07 12:33:34.424] [nssf_sbi] [debug] QueryString: nf-type=AMF&nf-id=725699ae-8f43-4e21-b838-baedba678ce0&slice-info-request-for-pdu-session={"roamingIndication":"NON_ROAMING","sNssai":{"sd":"130","sst":130}}
+[2024-06-07 12:33:34.424] [nssf_sbi] [info]  Query_PARAM::NF_TYPE - AMF
+[2024-06-07 12:33:34.424] [nssf_sbi] [info]  Query_PARAM::NF_ID - 725699ae-8f43-4e21-b838-baedba678ce0
+[2024-06-07 12:33:34.425] [nssf_sbi] [info]  Query_PARAM::SLICE_INFO_PDU_SESSION - {"roamingIndication":"NON_ROAMING","sNssai":{"sd":"130","sst":130}}
+[2024-06-07 12:33:34.425] [nssf_app] [info] 
+[2024-06-07 12:33:34.425] [nssf_sbi] [info] NS Selection: Got a request with slice info for PDU Session, Instance ID: 725699ae-8f43-4e21-b838-baedba678ce0
+[2024-06-07 12:33:34.425] [nssf_app] [info] NS Selection: Handle case - PDU Session (HTTP_VERSION 2)
+[2024-06-07 12:33:34.425] [nssf_app] [debug] Validating S-NSSAI for NSI
+[2024-06-07 12:33:34.425] [nssf_app] [info] NS Selection: Authorized Network Slice Info Returned !!!
+[2024-06-07 12:33:34.425] [nssf_app] [info] //---------------------------------------------------------
