@@ -1,0 +1,167 @@
+2024-07-02 11:43:17,539 - root - DEBUG - CSMF initialized with template path: config/network_slice_templates/gst_template2.json
+2024-07-02 11:43:17,539 - root - DEBUG - NSMF initialized
+2024-07-02 11:43:17,540 - root - DEBUG - NSSMF registered for domain: core
+2024-07-02 11:43:17,540 - root - DEBUG - Slice orchestrator set in CSMF
+2024-07-02 11:43:42,808 - root - DEBUG - Starting slice creation with parameters:
+2024-07-02 11:43:42,809 - root - DEBUG - Slice Type: eMBB
+2024-07-02 11:43:42,809 - root - DEBUG - Slice Differentiator: 98
+2024-07-02 11:43:42,809 - root - DEBUG - Latency: 10 ms
+2024-07-02 11:43:42,809 - root - DEBUG - Throughput: 150 Mbps
+2024-07-02 11:43:42,809 - root - DEBUG - Reliability: 75.0%
+2024-07-02 11:43:42,809 - root - DEBUG - CPU: 69 vCPUs
+2024-07-02 11:43:42,809 - root - DEBUG - Memory: 25 MB
+2024-07-02 11:43:42,809 - root - DEBUG - Storage: 15 GB
+2024-07-02 11:43:42,809 - root - DEBUG - Bandwidth: 100 Mbps
+2024-07-02 11:43:42,809 - root - ERROR - Validation error: Requested resources exceed available resources
+2024-07-02 11:43:46,408 - root - DEBUG - Starting slice creation with parameters:
+2024-07-02 11:43:46,409 - root - DEBUG - Slice Type: eMBB
+2024-07-02 11:43:46,409 - root - DEBUG - Slice Differentiator: 98
+2024-07-02 11:43:46,409 - root - DEBUG - Latency: 10 ms
+2024-07-02 11:43:46,409 - root - DEBUG - Throughput: 150 Mbps
+2024-07-02 11:43:46,409 - root - DEBUG - Reliability: 75.0%
+2024-07-02 11:43:46,409 - root - DEBUG - CPU: 69 vCPUs
+2024-07-02 11:43:46,409 - root - DEBUG - Memory: 5 MB
+2024-07-02 11:43:46,409 - root - DEBUG - Storage: 15 GB
+2024-07-02 11:43:46,409 - root - DEBUG - Bandwidth: 100 Mbps
+2024-07-02 11:43:46,409 - root - ERROR - Validation error: Requested resources exceed available resources
+2024-07-02 11:43:51,432 - root - DEBUG - Starting slice creation with parameters:
+2024-07-02 11:43:51,433 - root - DEBUG - Slice Type: eMBB
+2024-07-02 11:43:51,433 - root - DEBUG - Slice Differentiator: 98
+2024-07-02 11:43:51,433 - root - DEBUG - Latency: 10 ms
+2024-07-02 11:43:51,433 - root - DEBUG - Throughput: 150 Mbps
+2024-07-02 11:43:51,433 - root - DEBUG - Reliability: 75.0%
+2024-07-02 11:43:51,433 - root - DEBUG - CPU: 5 vCPUs
+2024-07-02 11:43:51,433 - root - DEBUG - Memory: 5 MB
+2024-07-02 11:43:51,433 - root - DEBUG - Storage: 15 GB
+2024-07-02 11:43:51,433 - root - DEBUG - Bandwidth: 100 Mbps
+2024-07-02 11:43:51,433 - root - DEBUG - Service request: {
+  "slice_type": "eMBB",
+  "slice_differentiator": "98",
+  "qos": {
+    "latency": {
+      "value": 10,
+      "unit": "ms"
+    },
+    "throughput": {
+      "value": 150,
+      "unit": "Mbps"
+    },
+    "reliability": {
+      "value": 75.0,
+      "unit": "%"
+    }
+  },
+  "resources": {
+    "cpu": {
+      "value": 5,
+      "unit": "vCPUs"
+    },
+    "memory": {
+      "value": 5,
+      "unit": "MB"
+    },
+    "storage": {
+      "value": 15,
+      "unit": "GB"
+    },
+    "bandwidth": {
+      "value": 100,
+      "unit": "Mbps"
+    }
+  }
+}
+2024-07-02 11:43:51,433 - root - DEBUG - CSMF received service request: {
+  "slice_type": "eMBB",
+  "slice_differentiator": "98",
+  "qos": {
+    "latency": {
+      "value": 10,
+      "unit": "ms"
+    },
+    "throughput": {
+      "value": 150,
+      "unit": "Mbps"
+    },
+    "reliability": {
+      "value": 75.0,
+      "unit": "%"
+    }
+  },
+  "resources": {
+    "cpu": {
+      "value": 5,
+      "unit": "vCPUs"
+    },
+    "memory": {
+      "value": 5,
+      "unit": "MB"
+    },
+    "storage": {
+      "value": 15,
+      "unit": "GB"
+    },
+    "bandwidth": {
+      "value": 100,
+      "unit": "Mbps"
+    }
+  }
+}
+2024-07-02 11:43:51,433 - root - DEBUG - Translating service request
+2024-07-02 11:43:51,433 - root - DEBUG - Translated request: {
+  "slice_type": "eMBB",
+  "slice_differentiator": "98",
+  "qos": {
+    "latency": {
+      "value": 10,
+      "unit": "ms"
+    },
+    "throughput": {
+      "value": 150,
+      "unit": "Mbps"
+    },
+    "reliability": {
+      "value": 75.0,
+      "unit": "%"
+    }
+  },
+  "resources": {
+    "cpu": {
+      "value": 5,
+      "unit": "vCPUs"
+    },
+    "memory": {
+      "value": 5,
+      "unit": "MB"
+    },
+    "storage": {
+      "value": 15,
+      "unit": "GB"
+    },
+    "bandwidth": {
+      "value": 100,
+      "unit": "Mbps"
+    }
+  }
+}
+2024-07-02 11:43:51,433 - root - DEBUG - Creating sub-slice for domain: core
+2024-07-02 11:43:51,433 - root - DEBUG - Received sub-slice creation request with config: {'slice_type': 'eMBB', 'slice_differentiator': '98', 'qos': {'latency': {'value': 10, 'unit': 'ms'}, 'throughput': {'value': 150, 'unit': 'Mbps'}, 'reliability': {'value': 75.0, 'unit': '%'}}, 'resources': {'cpu': {'value': 5, 'unit': 'vCPUs'}, 'memory': {'value': 5, 'unit': 'MB'}, 'storage': {'value': 15, 'unit': 'GB'}, 'bandwidth': {'value': 100, 'unit': 'Mbps'}}}
+2024-07-02 11:43:51,433 - root - DEBUG - Validating configuration: {'slice_type': 'eMBB', 'slice_differentiator': '98', 'qos': {'latency': {'value': 10, 'unit': 'ms'}, 'throughput': {'value': 150, 'unit': 'Mbps'}, 'reliability': {'value': 75.0, 'unit': '%'}}, 'resources': {'cpu': {'value': 5, 'unit': 'vCPUs'}, 'memory': {'value': 5, 'unit': 'MB'}, 'storage': {'value': 15, 'unit': 'GB'}, 'bandwidth': {'value': 100, 'unit': 'Mbps'}}}
+2024-07-02 11:43:51,433 - root - DEBUG - Configuration validation passed
+2024-07-02 11:43:51,433 - root - DEBUG - Calculated resources: {'AMF': {'cpu': 7, 'memory': 2798, 'storage': 15}, 'NRF': {'cpu': 7, 'memory': 1774, 'storage': 15}, 'SMF': {'cpu': 7, 'memory': 2798, 'storage': 15}, 'UPF': {'cpu': 7, 'memory': 4846, 'storage': 20}}
+2024-07-02 11:43:51,433 - nfvo - INFO - Deployed network slice bd1da222-6747-468d-8937-e5496a342031
+2024-07-02 11:43:51,433 - root - INFO - NFVO deployed network slice with response: {'slice_id': 'bd1da222-6747-468d-8937-e5496a342031', 'vnf_instances': {'AMF': {'instance_id': '5308a6e8-200e-4a53-bd18-b93dd01bfcf0', 'ip_address': '192.168.0.30', 'status': 'running', 'resources': {'cpu': 7, 'memory': 2798, 'storage': 15}}, 'NRF': {'instance_id': '62cad885-494c-43dd-8f35-c925c4b4f4d0', 'ip_address': '192.168.0.245', 'status': 'running', 'resources': {'cpu': 7, 'memory': 1774, 'storage': 15}}, 'SMF': {'instance_id': '08513120-ea7a-4cea-81b3-34149ec1a713', 'ip_address': '192.168.0.72', 'status': 'running', 'resources': {'cpu': 7, 'memory': 2798, 'storage': 15}}, 'UPF': {'instance_id': '0ab519f5-73db-4b4e-9c65-5f5015ae478e', 'ip_address': '192.168.0.18', 'status': 'running', 'resources': {'cpu': 7, 'memory': 4846, 'storage': 20}}}}
+2024-07-02 11:43:51,434 - root - INFO - Sub-slice created successfully with ID: cd471a61-9996-4af9-8665-0dd3e50b403e
+2024-07-02 11:43:51,434 - root - DEBUG - Created sub-slice with ID: cd471a61-9996-4af9-8665-0dd3e50b403e
+2024-07-02 11:43:51,434 - root - DEBUG - Retrieved sub-slice config: {'slice_type': 'eMBB', 'slice_differentiator': '98', 'qos': {'latency': {'value': 10, 'unit': 'ms'}, 'throughput': {'value': 150, 'unit': 'Mbps'}, 'reliability': {'value': 75.0, 'unit': '%'}}, 'resources': {'cpu': {'value': 5, 'unit': 'vCPUs'}, 'memory': {'value': 5, 'unit': 'MB'}, 'storage': {'value': 15, 'unit': 'GB'}, 'bandwidth': {'value': 100, 'unit': 'Mbps'}}}
+2024-07-02 11:43:51,434 - root - DEBUG - Received slice creation request: {'slice_id': '6824d634-d8f4-469c-884e-b7014bad86e4', 'slice_type': 'eMBB', 'slice_differentiator': '98', 'qos': {'latency': {'value': 10, 'unit': 'ms'}, 'throughput': {'value': 150, 'unit': 'Mbps'}, 'reliability': {'value': 75.0, 'unit': '%'}}, 'resources': {'cpu': {'value': 5, 'unit': 'vCPUs'}, 'memory': {'value': 5, 'unit': 'MB'}, 'storage': {'value': 15, 'unit': 'GB'}, 'bandwidth': {'value': 100, 'unit': 'Mbps'}}, 'sub_slices': {'core': {'slice_type': 'eMBB', 'slice_differentiator': '98', 'qos': {'latency': {'value': 10, 'unit': 'ms'}, 'throughput': {'value': 150, 'unit': 'Mbps'}, 'reliability': {'value': 75.0, 'unit': '%'}}, 'resources': {'cpu': {'value': 5, 'unit': 'vCPUs'}, 'memory': {'value': 5, 'unit': 'MB'}, 'storage': {'value': 15, 'unit': 'GB'}, 'bandwidth': {'value': 100, 'unit': 'Mbps'}}}}}
+2024-07-02 11:43:51,434 - root - DEBUG - Sending sub-slice creation request to CoreNSSMF with config: {'slice_id': '6824d634-d8f4-469c-884e-b7014bad86e4', 'slice_type': 'eMBB', 'slice_differentiator': '98', 'qos': {'latency': {'value': 10, 'unit': 'ms'}, 'throughput': {'value': 150, 'unit': 'Mbps'}, 'reliability': {'value': 75.0, 'unit': '%'}}, 'resources': {'cpu': {'value': 5, 'unit': 'vCPUs'}, 'memory': {'value': 5, 'unit': 'MB'}, 'storage': {'value': 15, 'unit': 'GB'}, 'bandwidth': {'value': 100, 'unit': 'Mbps'}}, 'sub_slices': {'core': {'slice_type': 'eMBB', 'slice_differentiator': '98', 'qos': {'latency': {'value': 10, 'unit': 'ms'}, 'throughput': {'value': 150, 'unit': 'Mbps'}, 'reliability': {'value': 75.0, 'unit': '%'}}, 'resources': {'cpu': {'value': 5, 'unit': 'vCPUs'}, 'memory': {'value': 5, 'unit': 'MB'}, 'storage': {'value': 15, 'unit': 'GB'}, 'bandwidth': {'value': 100, 'unit': 'Mbps'}}}}}
+2024-07-02 11:43:51,434 - root - DEBUG - Received sub-slice creation request with config: {'slice_id': '6824d634-d8f4-469c-884e-b7014bad86e4', 'slice_type': 'eMBB', 'slice_differentiator': '98', 'qos': {'latency': {'value': 10, 'unit': 'ms'}, 'throughput': {'value': 150, 'unit': 'Mbps'}, 'reliability': {'value': 75.0, 'unit': '%'}}, 'resources': {'cpu': {'value': 5, 'unit': 'vCPUs'}, 'memory': {'value': 5, 'unit': 'MB'}, 'storage': {'value': 15, 'unit': 'GB'}, 'bandwidth': {'value': 100, 'unit': 'Mbps'}}, 'sub_slices': {'core': {'slice_type': 'eMBB', 'slice_differentiator': '98', 'qos': {'latency': {'value': 10, 'unit': 'ms'}, 'throughput': {'value': 150, 'unit': 'Mbps'}, 'reliability': {'value': 75.0, 'unit': '%'}}, 'resources': {'cpu': {'value': 5, 'unit': 'vCPUs'}, 'memory': {'value': 5, 'unit': 'MB'}, 'storage': {'value': 15, 'unit': 'GB'}, 'bandwidth': {'value': 100, 'unit': 'Mbps'}}}}}
+2024-07-02 11:43:51,434 - root - DEBUG - Validating configuration: {'slice_id': '6824d634-d8f4-469c-884e-b7014bad86e4', 'slice_type': 'eMBB', 'slice_differentiator': '98', 'qos': {'latency': {'value': 10, 'unit': 'ms'}, 'throughput': {'value': 150, 'unit': 'Mbps'}, 'reliability': {'value': 75.0, 'unit': '%'}}, 'resources': {'cpu': {'value': 5, 'unit': 'vCPUs'}, 'memory': {'value': 5, 'unit': 'MB'}, 'storage': {'value': 15, 'unit': 'GB'}, 'bandwidth': {'value': 100, 'unit': 'Mbps'}}, 'sub_slices': {'core': {'slice_type': 'eMBB', 'slice_differentiator': '98', 'qos': {'latency': {'value': 10, 'unit': 'ms'}, 'throughput': {'value': 150, 'unit': 'Mbps'}, 'reliability': {'value': 75.0, 'unit': '%'}}, 'resources': {'cpu': {'value': 5, 'unit': 'vCPUs'}, 'memory': {'value': 5, 'unit': 'MB'}, 'storage': {'value': 15, 'unit': 'GB'}, 'bandwidth': {'value': 100, 'unit': 'Mbps'}}}}}
+2024-07-02 11:43:51,434 - root - DEBUG - Configuration validation passed
+2024-07-02 11:43:51,434 - root - DEBUG - Calculated resources: {'AMF': {'cpu': 7, 'memory': 2798, 'storage': 15}, 'NRF': {'cpu': 7, 'memory': 1774, 'storage': 15}, 'SMF': {'cpu': 7, 'memory': 2798, 'storage': 15}, 'UPF': {'cpu': 7, 'memory': 4846, 'storage': 20}}
+2024-07-02 11:43:51,434 - nfvo - INFO - Deployed network slice 410fb9a9-4162-44c3-bc32-bf41126d8cbd
+2024-07-02 11:43:51,434 - root - INFO - NFVO deployed network slice with response: {'slice_id': '410fb9a9-4162-44c3-bc32-bf41126d8cbd', 'vnf_instances': {'AMF': {'instance_id': 'dd8a2dea-008a-4ed4-8eac-5b644d87ae34', 'ip_address': '192.168.0.98', 'status': 'running', 'resources': {'cpu': 7, 'memory': 2798, 'storage': 15}}, 'NRF': {'instance_id': '01166499-7ad4-4d62-b96d-374ad968d0ff', 'ip_address': '192.168.0.184', 'status': 'running', 'resources': {'cpu': 7, 'memory': 1774, 'storage': 15}}, 'SMF': {'instance_id': 'a9797873-6fcd-407a-a535-717c46c5246a', 'ip_address': '192.168.0.193', 'status': 'running', 'resources': {'cpu': 7, 'memory': 2798, 'storage': 15}}, 'UPF': {'instance_id': '096a0f20-e702-42e9-bfb6-ef56299767e6', 'ip_address': '192.168.0.183', 'status': 'running', 'resources': {'cpu': 7, 'memory': 4846, 'storage': 20}}}}
+2024-07-02 11:43:51,434 - root - INFO - Sub-slice created successfully with ID: 941dc4d6-e3fb-4536-aa20-aac3df37c1af
+2024-07-02 11:43:51,434 - root - INFO - Slice instance created successfully with ID: 21585eca-63e7-48a0-b0dd-a1d53d0c9ab4
+2024-07-02 11:43:51,434 - root - INFO - Slice created with ID: 21585eca-63e7-48a0-b0dd-a1d53d0c9ab4
+2024-07-02 11:43:51,434 - root - ERROR - Validation error: Invalid resources for component slice_type

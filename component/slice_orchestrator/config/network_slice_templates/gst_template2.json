@@ -1,26 +1,77 @@
 {
-    "gst": {
-      "attributes": {
-        "service_type": {
-          "type": "string",
-          "allowed_values": ["eMBB", "URLLC", "mMTC"]
-        },
-        "latency": {
-          "type": "object",
-          "properties": {
-            "value": {"type": "number"},
-            "unit": {"type": "string", "enum": ["ms"]}
+  "gst": {
+    "attributes": {
+      "slice_type": {
+        "type": "string",
+        "description": "Type of network slice",
+        "allowed_values": ["eMBB", "URLLC", "mMTC"]
+      },
+      "slice_differentiator": {
+        "type": "string",
+        "description": "Optional field to differentiate slices of the same type",
+        "optional": true
+      },
+      "qos": {
+        "type": "object",
+        "properties": {
+          "latency": {
+            "type": "object",
+            "properties": {
+              "value": {"type": "number"},
+              "unit": {"type": "string", "enum": ["ms"]}
+            }
+          },
+          "throughput": {
+            "type": "object",
+            "properties": {
+              "value": {"type": "number"},
+              "unit": {"type": "string", "enum": ["Mbps"]}
+            }
+          },
+          "reliability": {
+            "type": "object",
+            "properties": {
+              "value": {"type": "number"},
+              "unit": {"type": "string", "enum": ["%"]}
+            }
           }
-        },
-        "throughput": {
-          "type": "object",
-          "properties": {
-            "value": {"type": "number"},
-            "unit": {"type": "string", "enum": ["Mbps"]}
+        }
+      },
+      "resources": {
+        "type": "object",
+        "properties": {
+          "cpu": {
+            "type": "object",
+            "properties": {
+              "value": {"type": "number"},
+              "unit": {"type": "string", "enum": ["vCPUs"]}
+            }
+          },
+          "memory": {
+            "type": "object",
+            "properties": {
+              "value": {"type": "number"},
+              "unit": {"type": "string", "enum": ["MB"]}
+            }
+          },
+          "storage": {
+            "type": "object",
+            "properties": {
+              "value": {"type": "number"},
+              "unit": {"type": "string", "enum": ["GB"]}
+            }
+          },
+          "bandwidth": {
+            "type": "object",
+            "properties": {
+              "value": {"type": "number"},
+              "unit": {"type": "string", "enum": ["Mbps"]}
+            }
           }
         }
       }
     }
   }
+}
   
   
